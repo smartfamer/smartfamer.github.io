@@ -1,7 +1,7 @@
 <!--
     메인 페이지 (Main Page)
 
-    최종 수정일 : 11.30
+    최종 수정일 : 12/13
     최종 수정자 : 상수
 
     * 주석을 습관화 합시다!!
@@ -10,58 +10,79 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <!--
-        모든 페이지의 기본 인코딩은 UTF-8로 합니다.
-     -->
+    <!-- 모든 페이지의 기본 인코딩은 UTF-8로 합니다. -->
     <meta charset="UTF-8">
-
-    <!--
-        메인 타이틀 제목은 일단 '스마트 파머'로 하였습니다.
-    -->
     <title>Smart Famer</title>
+    <!-- 웹페이지 상단 아이콘 추가소스 -->
+    <link rel="icon" href="lib/plant.png">
+
     <style>
         body
         {
             text-align: center;
+            background-color: black;
         }
 
         #header
         {
-            background-color: ivory;
+            color: white;
         }
         
         #nav
         {
-            background-color: lightcyan;
         }
 
         #section
         {
-            background-color: lightgreen;
         }
 
         #footer
         {
-            background-color: lightblue;
         }
     </style>
 </head>
 <body>
     <!-- Header -->
     <div id="header">
-        <h1>Smart Farm</h1>
+        <br>
+        <img src="lib/smartFarm.png" style="width: 50em;">
+
+        <h1>스마트팜 이란?</h1>
+        <h2>
+            비닐하우스, 축사에 ICT기술을 접목하여
+            원격 자동으로 작물과 가축의 생육환경을 적정하게
+            유지 관리할 수 있는 농장으로
+            작물 
+        </h2>
+        <br>
     </div>
 
     <!-- Nav -->
     <div id="nav">
-        <a href="SubPage/sub(flower).html">㉠</a>
-        <a href="SubPage/sub(animal).html">㉡</a>
-        <a href="SubPage/sub(fruit).html">㉢</a>
-        <a href="SubPage/sub(harvest).html">㉣</a>
+        <br>
+        <table>
+                <a href="SubPage/sub(flower).html">
+                    <img src="lib/button.png" style="width: 8em;">
+                </a>
+                
+                <a href="SubPage/sub(animal).html">
+                    <img src="lib/button2.png" style="width: 8em;">
+                </a>
+                
+                <a href="SubPage/sub(fruit).html">
+                    <img src="lib/button3.png" style="width: 8em;">
+                </a>
+                
+                <a href="SubPage/sub(harvest).html">
+                    <img src="lib/button4.png" style="width: 8em;">
+                </a>
+        </table>
+        <br>
     </div>
 
     <!-- Section -->
     <div id="section">
+        <br>
         <iframe
         width="560"
         height="315"
@@ -74,11 +95,14 @@
                 picture-in-picture"
         allowfullscreen>
         </iframe>
+        <br>
     </div>
 
     <!-- Footer -->
     <div id="footer">
+        <br>
         제작자 목록
+        <br>
     </div>
 </body>
 </html>
