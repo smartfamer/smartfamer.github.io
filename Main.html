@@ -1,108 +1,180 @@
 <!--
     메인 페이지 (Main Page)
-
-    최종 수정일 : 12/13
-    최종 수정자 : 상수
-
-    * 주석을 습관화 합시다!!
+      본 페이지는 스마트팜에 관해 간략하게 소개하는 페이지입니다
 -->
 
 <!DOCTYPE html>
 <html lang="ko">
 <head>
     <!-- 모든 페이지의 기본 인코딩은 UTF-8로 합니다. -->
+    <!-- 3개의 메타 태그는 부트스트랩을 위해 필요합니다-->
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 웹 페이지에 대한 설명을 가진 메타 -->
+    <meta name="description" content="Describes the contents of Smart Farm">
+    <!-- 웹 페이지의 저자에 대한 정보를 가진 메타-->
+    <meta name="author" content="1657017, 1961022, 1961023, 1961008">
+
     <title>Smart Famer</title>
+
     <!-- 웹페이지 상단 아이콘 추가소스 -->
-    <link rel="icon" href="lib/plant.png">
+    <link rel="icon" href="https://www.dropbox.com/s/pxx5jabtuq5qb1x/plant.png?dl=1">
+
+    <!-- 웹페이지 기본폰트 설정(나눔폰트)-->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+    <!-- 부트스트랩 최신 CSS 적용 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+
 
     <style>
+
         body
         {
+            /* 최적의 부트스트랩 적용을 위해 배경은 흰색으로 지정 */
+            background-color: #fff;
+            /* 페이지의 기본 폰트는 나눔폰트*/
+            font-family: 'Nanum Gothic', sans-serif; 
+        }
+
+        .header
+        {
+            position: relative;
+            width: 100%;
+            height: auto;
+            min-height: 35rem;
+            padding: 15rem 0;
             text-align: center;
-            background-color: black;
+            height: 100vh;
+            
+            background: top linear-gradient(to bottom, 
+            rgba(245, 245, 245, 0.3) 10%,
+             rgba(230, 230, 230, 0.7) 90%,
+              #ffffff 100%),
+               url('img/bg-title.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-size: cover;
         }
 
-        #header
+        .header h1
         {
-            color: white;
-        }
-        
-        #nav
-        {
+            color: black;
+            font-size: 100px;
+            letter-spacing: 0.8rem;
+            -webkit-background-clip: text;
+
         }
 
-        #section
+        .nav
         {
+            text-align: center;
+            margin: 50px 0px 50px 0px;
         }
 
-        #footer
+        .nav-set
         {
+            flex-basis: auto;
+            flex-grow: -1;
+            align-items: right;
+        }
+
+        .nav-customItem
+        {
+            display: list-item;
+            text-align: -webkit-match-parent;
+            list-style: none;
+            margin: 2rem 1.5rem;
+        }
+
+        .nav a
+        {
+            text-indent: 25px;
+            letter-spacing: 30px;
+            font: bold;
+        }
+
+        .section_video
+        {
+            /* top right bottom left */
+            margin: 50px 25px 50px 25px;
+        }
+
+        .footer
+        {
+            padding: 30px;
+            color: #fff;
+            background: bottom url('img/bg-footer.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
         }
     </style>
+
 </head>
 <body>
     <!-- Header -->
-    <div id="header">
-        <br>
-        <img src="lib/smartFarm.png" style="width: 50em;">
+    <header class="header">
+        <div class="container">
+            <h1>Smart Farm</h1>
+        </div>
+    </header>
 
-        <h1>스마트팜 이란?</h1>
-        <h2>
-            비닐하우스, 축사에 ICT기술을 접목하여
-            원격 자동으로 작물과 가축의 생육환경을 적정하게
-            유지 관리할 수 있는 농장으로
-            작물 
-        </h2>
-        <br>
-    </div>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-set">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-customItem">
+                    <a href="SubPage/sub(flower).html" class="btn btn-success btn-primary btn-lg" role="button">화훼</a>
+                </li>
+                <li class="nav-customItem">
+                    <a href="SubPage/sub(animal).html" class="btn btn-success btn-primary btn-lg" role="button">축산</a>
+                </li>
+                <li class="nav-customItem">
+                    <a href="SubPage/sub(fruit).html" class="btn btn-success btn-primary btn-lg" role="button">과수</a>
+                </li>
+                <li class="nav-customItem">
+                    <a href="SubPage/sub(harvest).html" class="btn btn-success btn-primary btn-lg" role="button">농업</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-    <!-- Nav -->
-    <div id="nav">
-        <br>
-        <table>
-                <a href="SubPage/sub(flower).html">
-                    <img src="lib/button.png" style="width: 8em;">
-                </a>
-                
-                <a href="SubPage/sub(animal).html">
-                    <img src="lib/button2.png" style="width: 8em;">
-                </a>
-                
-                <a href="SubPage/sub(fruit).html">
-                    <img src="lib/button3.png" style="width: 8em;">
-                </a>
-                
-                <a href="SubPage/sub(harvest).html">
-                    <img src="lib/button4.png" style="width: 8em;">
-                </a>
-        </table>
-        <br>
-    </div>
 
     <!-- Section -->
-    <div id="section">
-        <br>
-        <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube-nocookie.com/embed/RW45OPySzfE"
-        frameborder="0"
-        allow="accelerometer;
-                autoplay;
-                encrypted-media;
-                gyroscope;
-                picture-in-picture"
-        allowfullscreen>
-        </iframe>
-        <br>
-    </div>
+    <section class="section_video text-center">
+        <div class="container">
+            <!-- 스마트팜에 관한 영상 -->
+            <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube-nocookie.com/embed/RW45OPySzfE"
+            frameborder="0"
+            allow="accelerometer;
+                    autoplay;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture"
+            allowfullscreen>
+            </iframe>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <div id="footer">
-        <br>
-        제작자 목록
-        <br>
-    </div>
+    <footer class="footer small text-center">
+        <div class="container">
+            <!-- 저작권 표시 -->
+            Copylight &copy; Team. SmartFarmer 2019
+        </div>
+    </footer>
+
+    <!-- 빠른 페이지 로드를 위해 자바스크립트는 마지막에 로드-->
+    <!-- 부트스트래 자바스크립트 플러그인을 위해 필요(JQuery) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 부트스트랩 최신 Jscript 적용 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>        
 </body>
 </html>
