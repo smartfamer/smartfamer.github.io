@@ -23,120 +23,61 @@
     <link rel="icon" href="https://www.dropbox.com/s/pxx5jabtuq5qb1x/plant.png?dl=1">
 
     <!-- 웹페이지 기본폰트 설정(나눔폰트)-->
-    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap">
+    <!-- 타이틀 폰트(나눔스퀘어라운드)-->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css" type="text/css">
 
     <!-- 부트스트랩 최신 CSS 적용 -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 
-
-    <style>
-        body
-        {
-            /* 최적의 부트스트랩 적용을 위해 배경은 흰색으로 지정 */
-            background-color: #fff;
-            /* 페이지의 기본 폰트는 나눔폰트 */
-            font-family: 'Nanum Gothic', sans-serif;
-        }
-
-        .header
-        {
-            position: relative;
-            width: 100%;
-            height: auto;
-            min-height: 35rem;
-            padding: 15rem 0;
-            text-align: center;
-            height: 100vh;
-            
-            background: top linear-gradient(to bottom, 
-            rgba(245, 245, 245, 0.3) 10%,
-             rgba(230, 230, 230, 0.7) 90%,
-              #ffffff 100%),
-               url('img/bg-title.jpg');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: scroll;
-            background-size: cover;
-        }
-
-        .header h1
-        {
-            color: black;
-            font-size: 100px;
-            letter-spacing: 0.8rem;
-            -webkit-background-clip: text;
-        }
-
-        .nav
-        {
-            text-align: center;
-            margin: 100px 0px 100px 0px;
-        }
-
-        .nav-set
-        {
-            flex-basis: auto;
-            flex-grow: -1;
-            align-items: right;
-        }
-
-        .nav-customItem
-        {
-            display: list-item;
-            text-align: -webkit-match-parent;
-            list-style: none;
-            margin: 2rem 1.5rem;
-        }
-
-        .nav a
-        {
-            text-indent: 25px;
-            letter-spacing: 30px;
-            font: bold;
-        }
-
-        .section_video
-        {
-            /* top right bottom left */
-            margin: 50px 25px 50px 25px;
-        }
-
-        .footer
-        {
-            padding: 30px;
-            color: #fff;
-            background: bottom url('img/bg-footer.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-    </style>
-
+    <!-- 커스텀CSS 적용 -->
+    <link rel="stylesheet" href="smartfamer.css">
 </head>
+
 <body>
     <!-- Header -->
-    <header class="header">
+    <header class="header font">
         <div class="container">
             <h1>Smart Farm</h1>
         </div>
     </header>
 
+    <!-- Section(SmartFarm) -->
+    <section class="section_about">
+        <div class="container">
+            <h2>스마트팜(Smart Farm)이란?</h2>
+            <p>
+                4차 산업혁명 기술인 사물 인터넷, 빅데이터, 인공 지능 등의 기술을 이용하여
+                농작물, 가축 및 수산물 등의 생육 환경을 적정하게 유지 · 관리하고,
+                PC와 스마트폰 등으로 원격에서 자동 관리할 수 있어,
+                생산의 효율성뿐만 아니라 편리성도 높일 수 있는 농장을 말한다.
+            </p>
+        </div>
+    </section>
+
+    <hr>
+
     <!-- Navigation -->
     <nav class="nav">
-        <div class="nav-set">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-customItem">
+        <div>
+            <ul>
+                <li>
+                    <img src="img/nav_1.png" width="100">
                     <a href="SubPage/sub(flower).html" class="btn btn-success btn-primary btn-lg" role="button">화훼</a>
                 </li>
                 
-                <li class="nav-customItem">
+                <li>
+                    <img src="img/nav_2.png" width="100">
                     <a href="SubPage/sub(animal).html" class="btn btn-success btn-primary btn-lg" role="button">축산</a>
                 </li>
                 
-                <li class="nav-customItem">
+                <li>
+                    <img src="img/nav_3.png" width="100">
                     <a href="SubPage/sub(fruit).html" class="btn btn-success btn-primary btn-lg" role="button">과수</a>
                 </li>
                 
-                <li class="nav-customItem">
+                <li>
+                    <img src="img/nav_4.png" width="100">
                     <a href="SubPage/sub(harvest).html" class="btn btn-success btn-primary btn-lg" role="button">농업</a>
                 </li>
             </ul>
@@ -147,6 +88,8 @@
     <!-- Section -->
     <section class="section_video text-center">
         <div class="container">
+            <h2>홍보 영상</h2>
+            <hr>
             <!-- 스마트팜에 관한 영상 -->
             <iframe
             width="560"
@@ -154,12 +97,12 @@
             src="https://www.youtube-nocookie.com/embed/RW45OPySzfE"
             frameborder="0"
             allow="accelerometer;
-                    autoplay;
                     encrypted-media;
                     gyroscope;
                     picture-in-picture"
             allowfullscreen>
             </iframe>
+            <hr>
         </div>
     </section>
 

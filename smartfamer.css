@@ -1,0 +1,111 @@
+body
+{
+    /* 최적의 부트스트랩 적용을 위해 배경은 흰색으로 지정 */
+    background-color: #fff;
+    /* 페이지의 기본 폰트는 나눔폰트 */
+    font-family: 'Nanum Gothic', sans-serif;
+
+    zoom: 80%;
+}
+
+.header
+{
+    font-family: 'NanumSquareRound',sans-serif;
+    font-weight: 800;
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 35rem;
+    padding: 15rem 0;
+    text-align: center;
+    height: 100vh;
+    font-size: bold;
+    
+    background: top linear-gradient(to bottom, 
+    rgba(245, 245, 245, 0.3) 10%,
+     rgba(230, 230, 230, 0.7) 90%,
+      #ffffff 100%),
+       url('img/bg-title.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.header h1
+{
+    color: black;
+    font-size: 100px;
+    font-weight: bold;
+    letter-spacing: 0.8rem;
+    background: -webkit-linear-gradient(rgba(18, 148, 40, 0.9), rgb(95, 74, 5) 30%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase!important;
+}
+
+.section_about h2
+{
+    margin: 100px 0px 10px 0px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.section_about p
+{
+    text-align: center;
+    font-weight: 600;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.nav
+{
+    text-align: center;
+    margin: 100px 0px 100px 0px;
+}
+
+.nav ul
+{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.nav li
+{
+    float: left;
+    width: 25%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    list-style: none;
+}
+
+.nav a
+{
+    text-indent: 25px;
+    letter-spacing: 30px;
+    font: bold;
+}
+
+.section_video
+{
+    /* top right bottom left */
+    margin: 50px 25px 50px 25px;
+}
+
+.section_video h2
+{
+    margin-top: 150px;
+    font-weight: bold;
+}
+
+.footer
+{
+    padding: 30px;
+    color: #fff;
+    background: bottom url('img/bg-footer.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
