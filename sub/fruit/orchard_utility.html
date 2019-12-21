@@ -1,0 +1,174 @@
+
+<!--
+    메인 페이지 (Main Page)
+
+    최종 수정일 : 11.30
+    최종 수정자 : 종범
+
+    * 주석을 습관화 합시다!!
+-->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!--
+        모든 페이지의 기본 인코딩은 UTF-8로 합니다.
+     -->
+    <meta charset="UTF-8">
+
+    <!--
+        메인 타이틀 제목은 일단 '스마트 파머'로 하였습니다.
+    -->
+    <title>Smart Famer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css"
+        integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+      
+    <!-- 사용자 지정 css -->
+    <link rel="stylesheet" href="basic.css">
+    <style>
+        /* 이미지는 다다르므로 각자 정의 */
+        body{
+            background-image: url(./images/utility_title_image.jpg);
+        }
+        /* 이미지 두개(생산자와 소비자)의 높이 값을 동시에 설정 */
+        #utility_image{
+            height: 250px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div id="header">
+        <!-- 타이틀 사진위에 붙투명도를 입혀주고 그안에 텍스트를 띄움 -->
+        <div class="container-fluid w-75 mx-auto" id="title_bgcolor">
+            <!-- 제목과 소제목을 묶을 div -->
+            <div class="content_title">
+                <!-- 부트스트랩에서 따온 텍스트 정렬 (https://getbootstrap.com/docs/4.4/content/typography/)-->
+                <blockquote class="blockquote text-center">
+                    <p class="mb-0">스마트 과수</p>
+                    <p class="mb-1">실용성에 대해</p>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Section -->
+    <div id="section">
+        <!-- 테두리 색을 입혀주기 위해서 card로 전체를 덮어줌 border-success가 테두리임 (https://getbootstrap.com/docs/4.4/components/card/)-->
+        <div class="card border-success mb-3 w-75 mx-auto">
+            <br>
+            <br>
+            <!-- 생산자 카드 시작 -->
+            <div class="card mb-3 border-success mx-auto" style="max-width: 800px;">
+                <div class="row no-gutters">
+                    <div class="col-md-8">
+                        <!-- 문장이 길어 스크롤 바를 넣어 주고 싶어서 부트스트랩의 오버플로우 클래스를 추가해줌.
+                         그리고 카드는 원래 높이제한이 없기 때문에 오버플로우의 효과를 보기위해서 높이 제한을 걸어둠 -->
+                         <!-- 오버 플로우 (https://getbootstrap.com/docs/4.4/utilities/overflow/) -->
+                        <div class="card-body overflow-auto" style="max-height: 250px;">
+                            <!-- 제목 -->
+                            <h5 class="card-title">생산자의 입장</h5>
+                            <!-- 내용 -->
+                            <p class="card-text">토양수분센서, 토양EC/pH센서, 온‧습도센서, 풍향/ 풍속센서, 강우량센서, 일사량센서,
+                                 침입감지센서, 소음 센서, 페로몬 트랩, 결로센서를 통해서 과수원의 환경정보를 얻을 수 있고,
+                                  이 정보들을 바탕으로 과수원의 과일들이나 저온저장고에 보관된 과일들을 더욱더 효과적으로
+                                   관리할 수 있게 되었다. 또한 여러 기후센서들과 페로몬 트랩으로 병충해나 기상 악화등을 예방하기가 쉬어졌다. 
+                                   CCTV나 침입감시 센서는 과수원의 보안성을 증가 시켜주며 특히 CCTV같은 카메라는 과일들의 성장을 
+                                   관찰하고 기록하는데 도움을 준다. 스마트 과수원으로부터 얻은 정보들은 개인들만 가지고 있지않고 
+                                   정보공동활용시스템을 통해서 해당지역이나 과일을 위한 환경조건같은 정보들을 서로 공유할 수 있게해주며, 
+                                   기상정보의 공유도 가능하다.
+                            </p>
+                            <!-- 내용 -->
+                            <p class="card-text"> 제어노드와 여러 구동기를 연결해서 이들을 일괄적으로 그리고 원격으로 관리를 할수 있다. 
+                                관수 장치를 제어노드와 연결하면 수분정보를 분석해서 관수의 공급여부를 제어하고, 
+                                CCTV를 통해 방법 및 작물재배 모니터링에 활용 할 수 있으며, 동물이나 조류의 침입시 모니터링을 
+                                통하여 파악후 소음기기를 작동 시킬수도 있다.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 사진을 오른쪽에 배치함 -->
+                    <div class="col-md-4">
+                        <img id="utility_image" src="./images/farmer.jpg" class="card-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <!-- 소비자 카드 시작 border-success가 초록색 테두리를 의미함 mx-auto는 중앙정렬-->
+        <div class="card mb-3 border-success mx-auto" style="max-width: 800px;">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <!-- 이미지가 왼쪽에 있음 -->
+                    <img id="utility_image" src="./images/consumer.jpg" class="card-img">
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card-body overflow-auto"  style="max-height: 250px;">
+                    <!-- 제목 -->
+                    <h5 class="card-title">소비자</h5>
+                    <!-- 내용 -->
+                    <p class="card-text">스마트 과수원을 통해서 생산된 과일들은 여러 감지센서들을 통해서 실기간 관리가 가능하다. 
+                        또한 정보공동활용시스템을 통한 여러지역이나 과일들에 대한 최적의 토양, 기후 등의 정보를 통해서 최고의 환경과 
+                        조건을 조성할 수 있다. 재배 후 보관시에도 온도, 습도등의 감지센서로 과일이 출하되기 직전까지 꾸준한 관심속에서 
+                        관리되게 된다. 이렇게 키워지고 관리된 과일들은 당연히 그 품질의 좋을 수 밖에 없다. 또한 병충해나 이상기후에 
+                        대한 예방능력도 증가하기 때문에 병충해나 이ᄉᆞᆼ기후로 인한 흉작의 가능성이 많이 줄어 들었다. 그렇다면 갑작스러운 
+                        흉작으로 인해 과일들의 가격일 폭등하는 현상이 줄어들 것이고 소비자(우리)들을 보다 나은 가격으로 과일을 
+                        구입할 수 있게된다. 즉, 소비자들은 품질이 좋고 가격도 괜찮은 과일들을 지속적으로 공급받을 수 있게 되고, 이는 곧 
+                        식생활의 향상으로 이어진다. 더 넓게 생각해 본다면 어떤 의미로는 우리 삶의 질의 향상으로 이어진다고 볼 수 있다.
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <br>
+
+       
+ 
+     <!-- Nav -->
+    <div id="nav">
+        <!-- mx-auto(수직중앙정렬)의 적용을위해 버튼을 감싸는 div태크를 하나 생성 -->
+        <div class="container mx-auto">
+            <!-- 네비게이션용 버튼 그룹 생성 -->
+            <div class="btn-group btn-group-lg" role="group" aria-label="nav" >
+                <!-- 네비게이션용 버튼생성 -->
+                <button type="button" class="btn btn-success"><a class="text-light" href="../Main.html">Main home</a></button>
+                <button type="button" class="btn btn-success"><a class="text-light" href="./sub_main.html">Sub home</a></button>
+                <button type="button" class="btn btn-success"><a class="text-light" href="./smart_orchard_system.html">Smart orchard system</a></button>
+                <button type="button" class="btn btn-success"><a class="text-light" href="./smart_orchard_utility.html">Smart orchard utility</a></button>
+                <button type="button" class="btn btn-success"><a class="text-light" href="./smart_orchard_company.html">Smart orchard company</a></button>
+            </div>
+        </div>
+    </div>
+
+     <!-- Footer -->
+    <div id="footer">
+        <h1 style="text-align: center;">제작자 : 선종범</h1>
+    </div>
+    <!-- 회색부분 -->
+    <div>
+        <div class="container-fluid" id="bottom"></div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js"
+    integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P"
+    crossorigin="anonymous"></script>
+<script src="/media/jquery-3.3.1.min.js"></script>
+<script>
+    $(function () {
+        $('[data-toggle="popover"]').popover()
+    })
+</script>
+</html>
+<!-- 출처 -->
+<!-- 소비자 : https://as2.ftcdn.net/jpg/02/74/73/51/500_F_274735164_ui9MnhXoF568L9Dk8zrdBm2R5LN7eoPP.jpg
+농부 : https://t3.ftcdn.net/jpg/02/62/28/04/240_F_262280455_MGxxdegJCRD3VvtVhj0M6L7WKifAHd0U.jpg -->

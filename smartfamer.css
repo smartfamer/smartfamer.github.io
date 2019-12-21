@@ -5,13 +5,14 @@ body
     /* 페이지의 기본 폰트는 나눔폰트 */
     font-family: 'Nanum Gothic', sans-serif;
 
+    /* 기본 웹 확대 크기*/
     zoom: 80%;
 }
 
+/* Header */
 .header
 {
-    font-family: 'NanumSquareRound',sans-serif;
-    font-weight: 800;
+    /* 헤더 크기 설정 */
     position: relative;
     width: 100%;
     height: auto;
@@ -19,8 +20,8 @@ body
     padding: 15rem 0;
     text-align: center;
     height: 100vh;
-    font-size: bold;
     
+    /* 배경 그라데이션 및 배경설정 */
     background: top linear-gradient(to bottom, 
     rgba(245, 245, 245, 0.3) 10%,
      rgba(230, 230, 230, 0.7) 90%,
@@ -34,9 +35,11 @@ body
 
 .header h1
 {
+    /* 타이틀 글씨 스타일 */
+    font-family: 'NanumSquareRound',sans-serif;
+    font-weight: 800;
     color: black;
     font-size: 100px;
-    font-weight: bold;
     letter-spacing: 0.8rem;
     background: -webkit-linear-gradient(rgba(18, 148, 40, 0.9), rgb(95, 74, 5) 30%);
     -webkit-background-clip: text;
@@ -44,6 +47,7 @@ body
     text-transform: uppercase!important;
 }
 
+/* 섹션1 제목 부분 폰트 설정 */
 .section_about h2
 {
     margin: 100px 0px 10px 0px;
@@ -51,6 +55,7 @@ body
     font-weight: bold;
 }
 
+/* 섹션1 내용 부분 폰트 설정 */
 .section_about p
 {
     text-align: center;
@@ -60,18 +65,22 @@ body
     margin-bottom: 50px;
 }
 
+
+/* 네비게이션 여백 설정 */
 .nav
 {
     text-align: center;
     margin: 100px 0px 100px 0px;
 }
 
+/* 네비게이션 간격 설정 */
 .nav ul
 {
     width: 50%;
     margin: 0 auto;
 }
 
+/* 네비게이션 간격 설정 */
 .nav li
 {
     float: left;
@@ -82,6 +91,13 @@ body
     list-style: none;
 }
 
+/* 네비게이션 그림 간격 설정 */
+.nav-pic li
+{
+    height: 100px;
+}
+
+/* 네비게이션 버튼 설정 */
 .nav a
 {
     text-indent: 25px;
@@ -89,18 +105,21 @@ body
     font: bold;
 }
 
+/* 섹션2 영상 여백 설정 */
 .section_video
 {
     /* top right bottom left */
     margin: 50px 25px 50px 25px;
 }
 
+/* 섹션2 제목 폰트 설정 */
 .section_video h2
 {
     margin-top: 150px;
     font-weight: bold;
 }
 
+/* 제작자 저작권 표시 */
 .footer
 {
     padding: 30px;

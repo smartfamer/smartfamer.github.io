@@ -1,0 +1,61 @@
+body
+{
+    /* 최적의 부트스트랩 적용을 위해 배경은 흰색으로 지정 */
+    background-color: #fff;
+    /* 페이지의 기본 폰트는 나눔폰트 */
+    font-family: 'Nanum Gothic', sans-serif;
+
+    zoom: 80%;
+}
+
+.header
+{
+    /* 헤더 크기 설정 */    
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 35rem;
+    padding: 15rem 0;
+    text-align: center;
+    height: 80vh;
+
+    /* 배경 그라데이션 및 배경설정 */
+    background: top linear-gradient(to bottom, 
+    rgba(245, 245, 245, 0.3) 10%,
+     rgba(230, 230, 230, 0.7) 90%,
+      #ffffff 100%),
+       url('img/bg-subtitle.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+/* 타이틀 제목 설정 */
+.header h1
+{
+    font-family: 'NanumSquareRound',sans-serif;
+    font-weight: 800;
+    color: black;
+    font-size: 100px;
+    letter-spacing: 0.8rem;
+    background: -webkit-linear-gradient(rgba(18, 148, 40, 0.9), rgb(95, 74, 5) 30%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase!important;
+}
+
+/* 타이틀 부제목 설정 */
+.header h2
+{
+    font-family: 'NanumSquareRound',sans-serif;
+    font-weight: 800;
+    color: black;
+    font-size: 70px;
+    letter-spacing: 0.8rem;
+    background: -webkit-linear-gradient(rgb(235, 91, 91), rgb(190, 71, 214) 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase!important;
+}
+

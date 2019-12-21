@@ -1,0 +1,291 @@
+<!--
+    메인 페이지 (Main Page)
+
+    최종 수정일 : 12.20
+    최종 수정자 : 종범
+
+    * 주석을 습관화 합시다!!
+-->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!--
+        모든 페이지의 기본 인코딩은 UTF-8로 합니다.
+     -->
+    <meta charset="UTF-8">
+    <!--
+        메인 타이틀 제목은 일단 '스마트 파머'로 하였습니다.
+    -->
+    <title>Smart Famer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css"
+        integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+    
+    
+    <!-- 사용자 지정 css -->
+    <link rel="stylesheet" href="basic.css">
+    <style>
+        /* 이미지는 다다르므로 각자 정의 */
+        body{
+            background-image: url(./images/orchard_system_title.jpg);
+        }
+        /* 통신방식에서 노드 그림의 스타일을 지정 */
+        #jq_node{
+            /* 최대크기에 제한을 둬서 크기를 줄임 */
+            max-width: 100px; max-height: 150px;
+        }
+        /* 통신방식에서 화살표 그림의 스타일을 지정 */
+        #jq_arrow{
+           max-width: 60px; max-height: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- header section article footer nav 를 통합할 div -->
+    <div class="mx-auto">
+        <!-- Header -->
+        <div id="header">
+            <!-- 타이틀 사진위에 붙투명도를 입혀주고 그안에 텍스트를 띄움 -->
+            <div class="container-fluid w-75 mx-auto" id="title_bgcolor">
+                <!-- 제목과 소제목을 묶을 div -->
+                <div class="content_title">
+                    <!-- 부트스트랩에서 따온 텍스트 정렬 (https://getbootstrap.com/docs/4.4/content/typography/)-->
+                    <blockquote class="blockquote text-center">
+                        <p class="mb-0">스마트 과수</p>
+                        <p class="mb-1">시스템 설명</p>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Section -->
+        <div id="section">
+            <!-- 본문의 내용용 전부를 감싸는 테두리를 두기위해 div에 border사용(부트스트랩 https://getbootstrap.com/docs/4.4/utilities/borders/) -->
+            <div class = "w-75 mx-auto border">
+                <!-- 부트스트랩에서 따온 nav div사용 출처 https://getbootstrap.com/docs/4.4/components/navs/ -->
+                <!-- 항목 추가시 각 2번쨰 것과 같은 방식을 하면됨 -->
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <!-- 각파트별로 앵커만들기 -->
+                        <a class="nav-item nav-link active" id="nav-system_diagram-tab" data-toggle="tab" href="#nav-system_diagram" role="tab" aria-controls="nav-system_diagram" aria-selected="true">과수원 전체 구성도</a>
+                        <a class="nav-item nav-link" id="nav-commu_method-tab" data-toggle="tab" href="#nav-commu_method" role="tab" aria-controls="nav-commu_method" aria-selected="false">통산 방식</a>
+                        <!-- <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a> -->
+                    </div>
+                </nav>
+                <!-- 앵커에서 누르면 해당 앵커와 연결된 div태그의 내용이 나옴 -->
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-system_diagram" role="tabpanel" aria-labelledby="nav-system_diagram-tab">
+                        <br>
+                        <!-- 이미지 정렬을 위해 text-align속성을 넣어줌 -->
+                        <p style="text-align: center;">
+                            <!-- 설명을 위한 전체 구성도 이미지 -->
+                            <img class="w-75" src="./images/orchard_system.jpg">
+                        </p>
+                        
+                        <div class="w-75 mx-auto">
+                            <p>스마트 과수원은 다양한 정보들이 ICT를 이용해서 전달되고 사용된다. 이 정보들에는 위의 구성도에서 보는 것처럼 영상정보, 제어정보, 환경정보가 있다. 이 정보들의 이동 방향을 중심으로 위의 구상도에대해 설명해 보겠다.</p>
+                        </div>
+                        
+                        <!-- 부트스트랩의 카드 사용 https://getbootstrap.com/docs/4.4/components/card/ -->
+                        <!-- 카드의 테두리와 넓이 위치를 지정 -->
+                        <div class="card w-75 mx-auto" style="width: 18rem;">
+                            <div class="card-body">
+                                <!-- 분야별 이름 -->
+                                <h5 class="card-title">1. 영상정보</h5>
+                                <!-- 분야 내용 -->
+                                <p class="card-text">영상정보는 과수원에 설치된 CCTV와 웹카메라를 통해서 찍힌 영상들이다. 이 영상들은 녹화장비에 모이게 된다.</p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="card w-75 mx-auto" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">2. 제어정보</h5>
+                                <p class="card-text">과수원에 설치된 미세살수 장치, 스프링클러, 관수모터는 통합제어기 로부터 신호를 입력받아 작동하며, 혹은 스케줄 정보를 통해서 자동적으로 작동이 된다. 이 장치들은 작동의 결과나 경과의 정보를 통합제어기로 보내게 된다.</p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="card w-75 mx-auto" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">3. 환경정보</h5>
+                                <p class="card-text">환경정보는 다양한 곳에서 많은 정보들이 보내지는데 그이유는 아무래도 과수원에서 재배되는 농작물의 상태를 정밀하게 확인하기 위해서인 것 같다. 환경센서장비의 풍향/풍속, 강우, 일사 센서와 과수원의 온습도 센서, 결로센서를 통해서 기후(날씨)정보가 보내지고, IT페르몬 트랩에서는 어느 시기에 대상해충이 가장 많이 발생하는지를 파악하여 방제시기 정보를 보낸다. 또한 토양 수분센서, 토양EC/PH센서에서는 토양의 상태 정보를 보내주며, 저온저장고의 온도센서, 냉동기센서, 습도센서는 저장고의 다양한 정보를 보내 과일의 관리를 쉽게 도와준다. 그리고 침입탐지 센서는 침입 유무 정보를 보내어 과수우너을 안전하게 지켜준다. </p>
+                                <!-- 페르몬 트랩 정보 출처 : 골프산업신문(http://www.golfin.co.kr) -->
+                            </div>
+                        </div>
+                        <br>
+                        <div class="card w-75 mx-auto" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">4. 정보의 이동</h5>
+                                <p class="card-text">제어 정보와 환경정보는 통합제어기로 보내지고 통합제어기와 녹화장비는 자신들에게 온 정보들을 다시 종합적으로 시설운영관리시스템으로 보낸다. 그럼 사용자는 이 시스템을 통해서 스마트폰과 같은 전자기기들로 과수원을 쉽게 관리할 수 있다. 또한 시설운영관리시스템은 인터넷을 통하여 과일에 관련한 최적 기후조건이나 토양조건 등을 정보공동활용시스템으로 보내어 다른 과수원에서도 이를 활용할 수 있게 해준다.</p>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                    <!-- 출처 : https://www.smartfarmkorea.net/board/view.do 의 
+                        첨부파일 [2018.03월 개정] 스마트팜 장비규격 및 서비스기준(노지과수분야) -->
+                        <!-- 여기까지가 과수원 전체 구성도 -->
+                        
+                        <!-- 여기부터는 통신방법 -->
+                        <div class="tab-pane fade" id="nav-commu_method" role="tabpanel" aria-labelledby="nav-commu_method-tab">
+                            <div class="container w-75 mx-auto">
+                                <br>
+                            <h1>통신방식</h1>
+                            <!-- 통신방식에대한 표 부트스트랩(https://getbootstrap.com/docs/4.4/content/tables/) -->
+                            <br>
+                            <!-- 너비 75% 가운데 배치로 설정 -->
+                            <table class="table table-striped">
+                                <thead>
+                                    <!-- 항목 -->
+                                    <tr>
+                                        <th scope="col">통신방식의 종류</th>
+                                        <th scope="col">사용하는 것</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- 유선방식내용 -->
+                                    <tr>
+                                        <th scope="row">-유선방식</th>
+                                        <td>RS-485, RS-232, Ethernet, 전력선통신 등 유선 통신방식 사용</td>
+                                        
+                                    </tr>
+                                    <!-- 무선방식내용 -->
+                                    <tr>
+                                        <th scope="row">-무선방식</th>
+                                        <td>IEEE802.4, Bluetooth, LoRa, WiFi, 3G, 4G 등 무선 통신방식 사용</td>
+                                        
+                                    </tr>
+                                    <!-- 유,무선 겸용 방식 내용 -->
+                                    <tr>
+                                        <th scope="row">-유,무선 겸용</th>
+                                        <td>유무선 방식 혼합 또는 겸용 방식</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <br>
+                        <br>
+                        <!-- 그림과 제목을 전부 감싸주는 div태그 -->
+                        <div class="container w-75 mx-auto">
+                            <h1>통신단계</h1>
+                            <p style="text-align: center;">화살표를 눌러서 내용을 확인하세요.</p>
+                            <br>
+                            <br>
+                            <!-- 그림만 한번 더 따로 묶어줌 -->
+                            <div class="container">
+                                <!-- 그림을 부트스트랩의 row와 col을 이용해서 배열처럼 배치해줌(https://getbootstrap.com/docs/4.4/layout/grid/) -->
+                                <!-- 일반적으로 각 열당 그림이 한개씩 배치됨 -->
+                                <div class="row">
+                                    <!-- 노드 그림을 불러옴 -->
+                                    <div class="col">
+                                        <img id="jq_node" class="mx-auto" src="./images/node1.jpg">
+                                    </div>
+                                    <div class="col">
+                                        <!-- 화살표 두개가 수평으로 이어지지 않고 수직으로 배치되도록 col내에서 row를 한번 더써줌 -->
+                                        <div class="row">
+                                            <!-- 부트스트랩을 이용해서 화살표를 클릭시 해당 과정에 대한 설명이 말풍선의 형태로 하오게함 -->
+                                            <!-- 말풍선의 제목은 title이되고 내용은 data-content, 말풍선의 위치는 data-placement에 결정됨 -->
+                                            <!-- https://getbootstrap.com/docs/4.4/components/popovers/ -->
+                                            <!-- 이하 같은 내용의 반복임 -->
+                                            <a role="button" class="btn popover-test" title="- 센서노드와 통합과수환경제어기" 
+                                            data-toggle="popover" data-placement="top" data-content="센서노드는 설치된 환경센서에 의해 측정된 값을 
+                                            통합과수환경제어기로 전송하는 것이며, 센서노드와 통합과수환경제어기는 분리 또는 통합되어 있음.">
+                                            <img id = "jq_arrow" class="mx-auto" style="margin-top: 10%;" src="./images/arrow.jpg"></a>
+                                        </div>
+                                        <div class="row">
+                                            <a role="button" class="btn popover-test" title="- 제어노드와 통합과수환경제어기"
+                                            data-toggle="popover" data-placement="bottom" data-content="통합과수환경제어기에서 제어노드에 제어신호를 
+                                            보내거나 제어노드에서 제어결과 값을 통합과수환경제어기로 전송하는 것이며, 제어노드와 
+                                            통합과수환경제어기는 분리 또는 통합되어 있음.">
+                                            <img id = "jq_arrow" class="mx-auto" style="margin-top: 25%;" src="./images/arrow.jpg"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <img id="jq_node" class="mx-auto" src="./images/node2.jpg" >
+                                    </div>
+                                    <div class="col">
+                                        <a role="button" class="btn popover-test" title="- 통합과수환경제어기와 통합과수제어시스템"
+                                        data-toggle="popover" data-placement="bottom" data-content="센서노드 및 제어노드로부터 수집된 값을 통합과수제어시스템에 전송하거나, 
+                                        통합과수제어시스템의 제어신호를 통합과수환경제어기로 보내는 것이며, 통합과수제어시스템에는 
+                                        환경측정 및 제어결과 값이 저장됨">
+                                        <img id = "jq_arrow" class="mx-auto" style="margin-top: 60%;" src="./images/arrow.jpg"></a>
+                                    </div>
+                                    <div class="col">
+                                        <img id="jq_node" class="mx-auto" src="./images/node3.jpg">
+                                    </div>
+                                    <div class="col">
+                                        <a role="button" class="btn popover-test" title="- 통합과수제어시스템과 농정원 정보공동활용시스템"
+                                        data-toggle="popover" data-placement="bottom" data-content="통합과수제어시스템에 저장된 환경측정 및 제어결과 값을 농정원 
+                                        정보공동활용시스템으로 전송함">
+                                        <img id = "jq_arrow" class="mx-auto" class="mx-auto" style="margin-top: 60%;" src="./images/arrow.jpg"></a>
+                                    </div>
+                                    <div class="col">
+                                        <img id="jq_node" class="mx-auto" src="./images/node4.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 출처 : https://www.smartfarmkorea.net/board/view.do 의
+                            첨부파일  [2018.03월 개정] 스마트팜 장비규격 및 서비스기준(노지과수분야) -->
+                        <br>
+                        
+                        
+                    </div>
+                    
+                    <!-- <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div> -->
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+         <!-- Nav -->
+         <div id="nav">
+            <!-- mx-auto(수직중앙정렬)의 적용을위해 버튼을 감싸는 div태크를 하나 생성 -->
+            <div class="container mx-auto">
+                <!-- 네비게이션용 버튼 그룹 생성 -->
+                <div class="btn-group btn-group-lg" role="group" aria-label="nav" >
+                    <!-- 네비게이션용 버튼생성 -->
+                    <button type="button" class="btn btn-success"><a class="text-light" href="../Main.html">Main home</a></button>
+                    <button type="button" class="btn btn-success"><a class="text-light" href="./sub_main.html">Sub home</a></button>
+                    <button type="button" class="btn btn-success"><a class="text-light" href="./smart_orchard_system.html">Smart orchard system</a></button>
+                    <button type="button" class="btn btn-success"><a class="text-light" href="./smart_orchard_utility.html">Smart orchard utility</a></button>
+                    <button type="button" class="btn btn-success"><a class="text-light" href="./smart_orchard_company.html">Smart orchard company</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <br>
+    <!-- Footer -->
+    <div id="footer">
+        <h1 style="text-align: center;">제작자 : 선종범</h1>
+    </div>
+
+    <div>
+        <div class="container-fluid" id="bottom"></div>
+    </div>
+</body>
+<!-- 부트스트랩을 위한 스크립트들 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js"
+    integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P"
+    crossorigin="anonymous"></script>
+<script src="/media/jquery-3.3.1.min.js"></script>
+<script>
+    $(function () {
+        $('[data-toggle="popover"]').popover()
+    })
+</script>
+</html>
+<!-- 출처들 -->
+<!-- 출처 : https://www.smartfarmkorea.net/board/view.do 의
+첨부파일 : [2018.03월 개정] 스마트팜 장비규격 및 서비스기준(노지과수분야)
+페르몬 트랩 정보 출처 : 골프산업신문(http://www.golfin.co.kr)  
+출처 : https://www.smartfarmkorea.net/board/view.do 의
+첨부파일 : [2018.03월 개정] 스마트팜 장비규격 및 서비스기준(노지과수분야) -->
