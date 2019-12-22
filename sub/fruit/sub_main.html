@@ -118,9 +118,9 @@
     <section>
         <div class="card border-success mx-auto w-75 mb-3">
             <!-- 부트스트랩 유틸리티를 이용 (w-75는 넓이 전체의 75%, mx-auto는 중앙 정렬임) align-items-start클래스는 행을 처음줄로 고정해줌 -->
-            <div class="row w-75 mx-auto align-items-start">
+            <div class="row w-75 mx-auto align-items-start" style="margin-top: 100px;">
+                
                 <div class="col">
-
                     <!-- 과수원 정의 카드 -->
                     <div class="card mb-3" style="max-width: 540px;">
                         <div class="row no-gutters">
@@ -132,7 +132,7 @@
                             <div class="col-md-8">
 
                                 <div class="card-body">
-                                    <h5 class="card-title">과수원이란 :</h5>
+                                    <h5 class="card-title" style="font-weight: bold;">과수원이란?</h5>
                                     <p class="card-text">과수원은 사과, 포도와 같은 과일을 재배하는 밭을 총칭한다. 과일재배의 목적은 품질이 좋은 과실을 매해 다량 으로 생산하여 경제적 수익을 올리는 데 있다.</p>
                                 </div>
 
@@ -156,7 +156,7 @@
                             <div class="col-md-8">
 
                                 <div class="card-body">
-                                    <h5 class="card-title">스마트 과수란 :</h5>
+                                    <h5 class="card-title" style="font-weight: bold;">스마트 과수란?</h5>
                                     <p class="card-text">과수원의 개념에 원격관리 기술 등이 추가되었다고 생각하면된다. 한마디로 PC또는 모바일을 통해 온도와 습도, 기상상황 등을 모니터링 하고 원격으로 관수, 병해충 관리 등이 가능한 과수원이다.</p>
                                 </div>
 
@@ -169,12 +169,12 @@
             </div>
 
             <!-- align-items-end 클래스는 행을 마지막 줄로 고정해줌 행넓이를 W-75로 전체의 75%차지하게함 -->
-            <div class= "row w-75 mx-auto align-items-end">
+            <div class= "row w-75 mx-auto align-items-end" style="margin-bottom: 50px;">
                 <div class="col">
                     <!-- 추가설명 카드, 크기를 전체 75%중 전부를 차지하도록 100%로 설정 -->
                     <div class="card" style="width: 100%;">
                         <div class="card-body">
-                            <h5 class="card-title">추가 설명</h5>
+                            <h5 class="card-title" style="font-weight: bold;">추가 설명</h5>
                             <p class="card-text">정의에서 말한 바와 같이 과수원의 개념에 다른 기술이 추가된 것, 그것이 바로 스마트 과수원이다. 여기서 다른 기술이란 ICT(정보통신기술)로 이 ICT를 과수원에 접목시킨 것이 바로 스마트 과수원이다. 그렇다면 이 ICT기술로 무엇을 하는지 간단하게 이야기 해보겠다.</p>
                             <p class="card-text">우선 첫 번째로 자동화와 스마트폰 원격 제어이다. 센서값에 따른 자동 설비(관수모터 등) 제어가 가능하며 유사시 스마트폰으로 원격 조종도 가능하다. 이는 단순하고 반복적인 노동시간을 줄여 잉여시간을 활용 가능하게 한다.</p>
                             <p class="card-text">두 번째는 당도 등 생육데이터 관리이다. 휴대용 당도 측정기를 통해 수집된 데이터를 실시간 서버전송으로 당도분석이 가능하다. 이는 고품질과일의 재배와 적기수확으로 과일의 명품화를 도와준다.</p>
@@ -182,57 +182,57 @@
                         </div>
                     </div>
                 </div>
-            </div>            
-    </section>
+            </div>
 
-    <div class="card border-success mx-auto w-75 mb-3">
+            <hr>
 
-        <br>
-        <!-- 영상 삽입 구간 / 또는 사진-->
-        <div id="section">
+            <!-- 영상 삽입 구간 / 또는 사진-->
             <!-- 영상을 감싸는 카드 -->
-            <div class="card w-75 mx-auto">
+            <div class="card w-75 mx-auto" style="margin-top: 50px; margin-bottom: 100px;">
                 <div class="card-body">
-                    <h5 class="card-title">사례 동영상</h5>
+                   <h5 class="card-title" style="font-weight: bold; text-align: center;">사례 동영상</h5>
                 </div>
+            
                 <!-- 영상 중앙 배치 -->
                 <div align = middle>
-                    <iframe width="560px" height="315px" src="https://www.youtube.com/embed/xJC1-Adz0o8" frameborder="0"
+                    <iframe width="560px"
+                            height="315px"
+                            src="https://www.youtube.com/embed/xJC1-Adz0o8"
+                            frameborder="0"
                             allowfullscreen>
                     </iframe>
                 </div>
-                <br>
             </div>
+
         </div>
-        <br>
-    </div>
-
-    
-    
-    
+    </section>
 
 
-
-    <!-- 하단 회색부분 -->
-    <div>
-        <div class="container-fluid" id="bottom"></div>
-    </div>
-
+    <!-- Footer -->
+    <footer class="footer small text-center">
+        <div class="container">
+            <!-- 저작권 표시 -->
+            Copylight &copy; Team. SmartFarmer 2019
+        </div>
+    </footer>
 </body>
-<!-- 부트스트랩 필요 자바스크립트 연결 -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js"
-    integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P"
-    crossorigin="anonymous"></script>
-<script src="/media/jquery-3.3.1.min.js"></script>
-<script>
-    $(function () {
-        $('[data-toggle="popover"]').popover()
-    })
-</script>
+
+    <!-- 부트스트랩 필요 자바스크립트 연결 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js"
+            integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P"
+            crossorigin="anonymous">
+    </script>
+    <script src="/media/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
+    </script>
 </html>
 
 <!--과수원 정의 출처 https://ko.wikipedia.org/wiki/%EA%B3%BC%EC%88%98%EC%9B%90 -->

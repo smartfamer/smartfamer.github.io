@@ -5,7 +5,7 @@ body
     /* 페이지의 기본 폰트는 나눔폰트 */
     font-family: 'Nanum Gothic', sans-serif;
 
-    zoom: 80%;
+    zoom: 100%;
 }
 
 .header
@@ -53,9 +53,88 @@ body
     color: black;
     font-size: 70px;
     letter-spacing: 0.8rem;
-    background: -webkit-linear-gradient(rgb(235, 91, 91), rgb(190, 71, 214) 90%);
+    background: -webkit-linear-gradient(rgb(235, 144, 91), rgb(71, 162, 214) 90%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-transform: uppercase!important;
+}
+
+/* 네비게이션 여백 설정 */
+.nav
+{
+    text-align: center;
+    margin: 100px 0px 100px 0px;
+}
+
+/* 네비게이션 간격 설정 */
+.nav ul
+{
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* 네비게이션 간격 설정 */
+.nav li
+{
+    float: left;
+    width: 25%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    list-style: none;
+}
+
+/* 네비게이션 버튼 설정 */
+.nav a
+{
+    text-indent: 25px;
+    letter-spacing: 30px;
+    font-weight: bold;
+}
+
+/* 네비게이션 그림 간격 설정 */
+.nav-pic li
+{
+    height: 100px;
+}
+
+.nav-h a
+{
+    text-indent: 15px;
+    letter-spacing: 15px;
+}
+
+.section
+{
+    margin-bottom: 100px;
+}
+
+.section_b
+{
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.section_b h2
+{
+    margin: 100px 0px 10px 0px;
+    font-weight: bold;
+}
+
+.section_b p
+{
+    font-weight: 600;
+    width: 75%;
+    margin: 0 auto;
+}
+
+/* 제작자 저작권 표시 */
+.footer
+{
+    padding: 30px;
+    color: #fff;
+    background: bottom url('img/bg-subtitle.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 

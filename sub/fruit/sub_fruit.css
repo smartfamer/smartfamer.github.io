@@ -68,7 +68,7 @@ body
 .nav
 {
     text-align: center;
-    margin: 50px 0px 100px 0px;
+    margin: 50px 0px 50px 0px;
 }
 
 /* 네비게이션 간격 설정 */
@@ -108,21 +108,12 @@ body
     font: bold;
 }
 
-
-
-
-/* 네비게이션 버튼의 데코레이션 제거 */
-a.text-light{
-    text-decoration: none;
-}
-/* 네이게이션 가운데 정렬을 위한 스타일 */
-.btn-group{
-    left: 50%;
-    margin-left: -470px;
-}
-/* 화면 제일 하단 부분 */
-#bottom{
-    background-color: rgba(0, 0, 0, 0.103);
-    margin-top: 100px;
-    height: 200px;
+/* 제작자 저작권 표시 */
+.footer
+{
+    padding: 30px;
+    color: #fff;
+    background: bottom url('img/bg-subtitle.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }

@@ -5,37 +5,35 @@ body
     /* 페이지의 기본 폰트는 나눔폰트 */
     font-family: 'Nanum Gothic', sans-serif;
 
-    /* 기본 웹 확대 크기*/
-    zoom: 80%;
+    zoom: 100%;
 }
 
-/* Header */
 .header
 {
-    /* 헤더 크기 설정 */
+    /* 헤더 크기 설정 */    
     position: relative;
     width: 100%;
     height: auto;
     min-height: 35rem;
     padding: 15rem 0;
     text-align: center;
-    height: 100vh;
-    
+    height: 80vh;
+
     /* 배경 그라데이션 및 배경설정 */
     background: top linear-gradient(to bottom, 
     rgba(245, 245, 245, 0.3) 10%,
      rgba(230, 230, 230, 0.7) 90%,
       #ffffff 100%),
-       url('img/bg-title.jpg');
+       url('img/bg-subtitle.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
 }
 
+/* 타이틀 제목 설정 */
 .header h1
 {
-    /* 타이틀 글씨 스타일 */
     font-family: 'NanumSquareRound',sans-serif;
     font-weight: 800;
     color: black;
@@ -47,24 +45,19 @@ body
     text-transform: uppercase!important;
 }
 
-/* 섹션1 제목 부분 폰트 설정 */
-.section_about h2
+/* 타이틀 부제목 설정 */
+.header h2
 {
-    margin: 100px 0px 10px 0px;
-    text-align: center;
-    font-weight: bold;
+    font-family: 'NanumSquareRound',sans-serif;
+    font-weight: 800;
+    color: black;
+    font-size: 70px;
+    letter-spacing: 0.8rem;
+    background: -webkit-linear-gradient(rgb(235, 91, 91), rgb(190, 71, 214) 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase!important;
 }
-
-/* 섹션1 내용 부분 폰트 설정 */
-.section_about p
-{
-    text-align: center;
-    font-weight: 600;
-    width: 50%;
-    margin: 0 auto;
-    margin-bottom: 50px;
-}
-
 
 /* 네비게이션 여백 설정 */
 .nav
@@ -76,7 +69,7 @@ body
 /* 네비게이션 간격 설정 */
 .nav ul
 {
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -91,12 +84,6 @@ body
     list-style: none;
 }
 
-/* 네비게이션 그림 간격 설정 */
-.nav-pic li
-{
-    height: 100px;
-}
-
 /* 네비게이션 버튼 설정 */
 .nav a
 {
@@ -105,18 +92,40 @@ body
     font-weight: bold;
 }
 
-/* 섹션2 영상 여백 설정 */
-.section_video
+/* 네비게이션 그림 간격 설정 */
+.nav-pic li
 {
-    /* top right bottom left */
-    margin: 50px 25px 50px 25px;
+    height: 100px;
 }
 
-/* 섹션2 제목 폰트 설정 */
-.section_video h2
+.nav-h a
 {
-    margin-top: 150px;
+    text-indent: 15px;
+    letter-spacing: 15px;
+}
+
+.section
+{
+    margin-bottom: 100px;
+}
+
+.section_b
+{
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.section_b h2
+{
+    margin: 100px 0px 10px 0px;
     font-weight: bold;
+}
+
+.section_b p
+{
+    font-weight: 600;
+    width: 50%;
+    margin: 0 auto;
 }
 
 /* 제작자 저작권 표시 */
@@ -124,7 +133,8 @@ body
 {
     padding: 30px;
     color: #fff;
-    background: bottom url('img/bg-footer.jpg');
+    background: bottom url('img/bg-subtitle.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
+
