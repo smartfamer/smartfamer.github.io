@@ -12,37 +12,66 @@
 <head>
     <!-- 모든 페이지의 기본 인코딩은 UTF-8로 합니다. -->
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Smart Famer</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css"
-        integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+
+    <!-- 웹 페이지 상단 아이콘 추가 -->
+    <link rel="icon" href="https://www.dropbox.com/s/pxx5jabtuq5qb1x/plant.png?dl=1">
+
     
+    <!-- 부트스트랩 필요 css링크 연결 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
     
+    <!-- 나눔폰트 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap">
+    <!-- 타이틀 폰트(나눔스퀘어라운드)-->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css" type="text/css">
+
     <!-- 사용자 지정 css -->
-    <link rel="stylesheet" href="basic.css">
-    
-    <style>
-        body{
-            background-image: url(./images/future.jpg);
-        }
-    </style>
+    <link rel="stylesheet" href="sub_fruit.css">
+
+
 
 </head>
 <body>
+  
     <!-- Header -->
-    <div id="header">
-        <!-- 타이틀 사진위에 붙투명도를 입혀주고 그안에 텍스트를 띄움 -->
-        <div class="container-fluid w-75 mx-auto" id="title_bgcolor">
-            <!-- 제목과 소제목을 묶을 div -->
-            <div class="content_title">
-                <!-- 부트스트랩에서 따온 텍스트 정렬 (https://getbootstrap.com/docs/4.4/content/typography/)-->
-                <blockquote class="blockquote text-center">
-                    <p class="mb-0">스마트 과수</p>
-                    <p class="mb-1">미래에 대해</p>
-                </blockquote>
+    <header class="header">
+        <div class="container">
+                <h1>Smart Farm</h1>
+                <h2>Orchard</h2>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <!-- 콘텐츠 페이지로 이동 -->
+        <div class="container" style="margin-top: 30px;">
+            <div class="container">
+                <ul class="nav-h">
+                    <li> <!-- 서브 메인페이지로 이동 -->
+                        <a href="sub_main.html" class="btn btn-success btn-primary btn-lg" role="button">메인</a>
+                    </li>
+                    
+                    <li> <!-- 미래전망 파트로 이동 -->
+                        <a href="orchard_future.html" class="btn btn-info btn-primary btn-lg" role="button">시스템</a>
+                    </li>
+
+                    <li> <!-- 유틸리티 파트로 이동 -->
+                        <a href="orchard_utility.html" class="btn btn-info btn-primary btn-lg" role="button">유틸리티</a>
+                    </li>
+                        
+                    <li> <!-- 관련기업 파트로 이동 -->
+                        <a href="orchard_company.html" class="btn btn-info btn-primary btn-lg" role="button">관련기업</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </div>
+    </nav>
+
 
     <div class="card border-success mb-3 w-75 mx-auto">
         <br>
@@ -77,27 +106,19 @@
         </div>
     </div>
 
-
-    <!-- Nav -->
-    <div id="nav">
- 
-    </div>
-
-    <!-- Section -->
-    <div id="section">
-    </div>
-
+    <br>
+    <br>
+    <br>
+    <br>
 
     <!-- Footer -->
-    <div id="footer">
-        <br>
-
-        <br>
-    </div>
-    <!-- 회색부분 -->
-    <div>
-        <div class="container-fluid" id="bottom"></div>
-    </div>
+    <footer class="footer small text-center">
+        <div class="container">
+            <!-- 저작권 표시 -->
+            Copylight &copy; Team. SmartFarmer 2019
+        </div>
+    </footer>
+ 
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
