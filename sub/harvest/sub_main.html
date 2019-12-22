@@ -1,39 +1,150 @@
 <!--
-    서브 페이지 (Sub Main Page)
-    "농업 파트"
-    페이지 담당자 : 범주
+    서브 메인 페이지 (Sub Main Page)
+      본 페이지는 서브 메인 페이지로 '농업'와 관련된 내용을 다룹니다
 -->
 
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+    <!-- 모든 페이지의 기본 인코딩은 UTF-8로 합니다. -->
+    <!-- 3개의 메타 태그는 부트스트랩을 위해 필요합니다-->
     <meta charset="UTF-8">
-    <title>Smart Farm</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 웹 페이지의 저자에 대한 정보를 가진 메타-->
+    <meta name="author" content="1961008">
+
+    <title>Smart Famer</title>
+
+    <!-- 웹페이지 상단 아이콘 추가소스 -->
+    <link rel="icon" href="https://www.dropbox.com/s/pxx5jabtuq5qb1x/plant.png?dl=1">
+
+    <!-- 웹페이지 기본폰트 설정(나눔폰트)-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap">
+    <!-- 타이틀 폰트(나눔스퀘어라운드)-->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css" type="text/css">
+     
+    <!-- 부트스트랩 최신 CSS 적용 -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!-- 커스텀CSS 적용 -->
+    <link rel="stylesheet" href="sub_title.css">
 </head>
+
 <body>
-    <!-- 타이틀과 각 분야에 관한 정의와 설명 -->
-    <div id="header">
-        <h1>스마트 농업에 대하여</h1>
-        <p>‘스마트농업’이란 정보통신기술을 농업의 생산, 가공, 유통, 소비 전반에 접목해 원격에서 자동으로 작물의 생육 환경을 관리하고 생산 효율을 높일 수 있는 기술이다.
-            사물인터넷(Internet of Things, IoT) 기술을 기반으로 시설의 온도, 습도, 일조량, 이산화탄소량, 토양 등을 자동으로 측정 및 분석하고 관리할 수 있는 것은 물론 
-            스마트폰과 같은 모바일 기기를 통해 작물 재배 환경을 원격으로 관리할 수 있게 지원한다.
-            최근에는 인공지능(AI) 기술을 빅데이터 해석에 접목, 생산과 소비의 최적화를 이뤄내는 농산물 유통혁명도 넓은 의미에서 스마트농업에 포함하고 있다. 
-            그래서 스마트농업은 정밀농업, 스마트팜으로 대표되는 스마트온실, 가축 모니터링 등에 폭넓게 적용되고 있다.
-            정밀농업은 더 적은 자원을 사용하고 생산 비용을 줄이면서 더 많은 작물을 생산하기 위해 농장에서 다양한 작물을 적정하게 관리하는 기술체계를 의미하며 
-            여기에는 작물 생산량 및 병해충 모니터링, 토양 맵핑, 기상 관측 및 예측, 정밀관개기술, 농장의 재고 및 노무관리 등 포함하고 있다. 
-            이를 효과적으로 통합하기 위한 클라우드 기반의 농장관리 소프트웨어가 이를 지원하기 위해 사용된다. 
-            원예 스마트팜은 HVAC(Heating, Ventilation, Air Conditioning) 관리, 생산 모니터링, 물 및 비료 관리 등을 자동으로 제어하고 있으며 
-            최근에는 AI 기술을 적용, 생육과 환경변화에 실시간으로 대응하는 방향으로 진화하고 있다.
+    <!-- Header -->
+    <!-- 타이틀 제목과 부제목 생성 -->
+    <header class="header">
+        <div class="container">
+            <h1>Smart Farm</h1>
+            <h2>harvest</h2>
+        </div>
+    </header>
 
-            [출처: 농축유통신문] http://www.amnews.co.kr/news/articleView.html?idxno=36402
-
-    </div>
-
-    <!-- 영상 삽입 구간 / 또는 사진-->
-    <div id="section">
-
-    </div>
-
+    <!-- Navigation -->
+    <nav class="nav">
+        <!-- 다른페이지로 이동 -->
+        <div class="container" style="margin-bottom: 30px;">
+            <!-- 이미지 삽입 -->
+            <ul class="nav-pic">
+                <li> <img src="../../img/nav_0.png" width="100"> </li>
     
+                <li> <img src="../../img/nav_1.png" width="100"> </li>
+    
+                <li><img src="../../img/nav_2.png" width="100"> </li>
+    
+                <li> <img src="../../img/nav_3.png" width="100"> </li>                
+            </ul>
+    
+            <!-- 하이퍼링크 -->
+            <ul>
+                <li> <!-- 메인페이지로 이동 -->
+                    <a href="../../Main.html" class="btn btn-success btn-primary btn-lg" role="button">메인</a>
+                </li>
+                    
+                <li> <!-- 화훼 파트로 이동 -->
+                    <a href="../flower/sub_main.html" class="btn btn-success btn-primary btn-lg" role="button">화훼</a>
+                </li>
+                    
+                <li> <!-- 축산 파트로 이동 -->
+                    <a href="../animal/sub_main.html" class="btn btn-success btn-primary btn-lg" role="button">축산</a>
+                </li>
+                    
+                <li> <!-- 과수 파트로 이동 -->
+                    <a href="../fruit/sub_main.html" class="btn btn-success btn-primary btn-lg" role="button">과수</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 문단 줄 생성 -->
+        <div class="container"><hr></div>
+
+        <div class="container" style="margin-top: 30px;">
+            <!-- 콘텐츠 페이지로 이동 -->
+            <div class="container">
+                <ul class="nav-h">
+                    <li> <!-- 시스템 콘텐츠로 이동 -->
+                        <a href="harvest_system.html" class="btn btn-info btn-primary btn-lg" role="button">시스템</a>
+                    </li>
+
+                    <li> <!-- 관련기업 콘텐츠로 이동 -->
+                        <a href="harvest_company.html" class="btn btn-info btn-primary btn-lg" role="button">관련기업</a>
+                    </li>
+
+                    <li> <!-- 미래전망 콘텐츠로 이동 -->
+                        <a href="harvest_future.html" class="btn btn-info btn-primary btn-lg" role="button">미래전망</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section -->
+    <section>
+        <!-- 섹션 상자 생성 -->
+        <div class="section card border-success w-75 mx-auto">
+            
+            <!-- 화훼의 정의-->
+            <div class="section_b container">
+                <h2>'스마트 농업'에 대하여</h2>
+                <p>
+                    ‘스마트농업’이란 정보통신기술을 농업의 생산, 가공, 유통, 소비 전반에 접목해 원격에서 자동으로 작물의 생육 환경을 관리하고
+                    생산 효율을 높일 수 있는 기술이다.
+                </p>
+                <p>
+                    사물인터넷(Internet of Things, IoT) 기술을 기반으로 시설의 온도, 습도, 일조량, 이산화탄소량, 토양 등을 자동으로
+                    측정 및 분석하고 관리할 수 있는 것은 물론  스마트폰과 같은 모바일 기기를 통해 작물 재배 환경을 원격으로 관리할 수 있게 지원한다.
+                </p>
+                <p>
+                    최근에는 인공지능(AI) 기술을 빅데이터 해석에 접목, 생산과 소비의 최적화를 이뤄내는 농산물 유통혁명도 넓은 의미에서 스마트농업에 포함하고 있다. 
+                    그래서 스마트농업은 정밀농업, 스마트팜으로 대표되는 스마트온실, 가축 모니터링 등에 폭넓게 적용되고 있다.
+                </p> 
+                <p>
+                    정밀농업은 더 적은 자원을 사용하고 생산 비용을 줄이면서 더 많은 작물을 생산하기 위해 농장에서 다양한 작물을 적정하게 관리하는 기술체계를 의미하며 
+                    여기에는 작물 생산량 및 병해충 모니터링, 토양 맵핑, 기상 관측 및 예측, 정밀관개기술, 농장의 재고 및 노무관리 등 포함하고 있다.
+                    이를 효과적으로 통합하기 위한 클라우드 기반의 농장관리 소프트웨어가 이를 지원하기 위해 사용된다. 
+                </p>
+                <p>
+                    원예 스마트팜은 HVAC(Heating, Ventilation, Air Conditioning) 관리, 생산 모니터링, 물 및 비료 관리 등을 자동으로 제어하고 있으며 
+                    최근에는 AI 기술을 적용, 생육과 환경변화에 실시간으로 대응하는 방향으로 진화하고 있다.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer small text-center">
+        <div class="container">
+            <!-- 저작권 표시 -->
+            Copylight &copy; Team. SmartFarmer 2019
+        </div>
+    </footer>
 </body>
 </html>
+
+<!--
+     출처
+    농축유통신문 http://www.amnews.co.kr/news/articleView.html?idxno=36402
+-->

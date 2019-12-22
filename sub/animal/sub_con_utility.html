@@ -1,161 +1,238 @@
-<!--
-    시스템 기술 페이지 (System Technology Page)
-
-    "축산 파트"
-    페이지 담당자 : 영우
--->
 
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+    <!-- 모든 페이지의 기본 인코딩은 UTF-8로 합니다. -->
+    <!-- 3개의 메타 태그는 부트스트랩을 위해 필요합니다-->
     <meta charset="UTF-8">
-    <title>Systme_Technology</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 웹 페이지의 저자에 대한 정보를 가진 메타-->
+    <meta name="author" content="1961022">
+
+    <title>Smart Famer</title>
+
+    <!-- 웹페이지 상단 아이콘 추가소스 -->
+    <link rel="icon" href="https://www.dropbox.com/s/pxx5jabtuq5qb1x/plant.png?dl=1">
+
+    <!-- 웹페이지 기본폰트 설정(나눔폰트)-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap">
+    <!-- 타이틀 폰트(나눔스퀘어라운드)-->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css" type="text/css">
+     
+    <!-- 부트스트랩 최신 CSS 적용 -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!-- 커스텀CSS 적용 -->
+    <link rel="stylesheet" href="sub_title.css">
 </head>
+
 <body>
-    <!-- 시스템 기술 이미지와 설명 -->
-    <div>
-        <h1>-환경정보 수집장치-</h1>
-        <br>
-        <h2>개념</h2>
-        <h3>센서와 통신모듈이 결합된 구조로서 측정된 값을 온실통합제어기에 전달</h3>
-        <br>
-        <h2>구성</h2>
-        <h3>외부환경 센서장 : 온도센서, 습도센서, 풍향·풍속 센서, 감우(강우감지)센서, 일사량 센서</h3>
-        <h3>내부환경 센서장 : 온도센서, 습도센서, CO2센서</h3>
+    <!-- Header -->
+    <!-- 타이틀 제목과 부제목 생성 -->
+    <header class="header">
+        <div class="container">
+            <h1>Smart Farm</h1>
+            <h2>LiveStock</h2>
+        </div>
+    </header>
 
-        <br>
-        <h2>온/습도 센서</h2>
-        <h3>습도 센서는 공기 속의 수증기 양을 재는 센서</h3>
-        <h3>농장 돈사 내-외부에 설치하여야 하며 측정된 값을 제어 관리시스템에 보내야 합니다.</h3>
-        <br>
-        <h2>CO2센서</h2>
-        <h3>이산화탄소의 측정을 위한 센서</h3>
-        <h3>농장 돈사 내부에 설치하며, 측정된 값을 제어관리시스템에 전송합니다.</h3>
-        <br>
-        <h2>풍향-풍속센서</h2>
-        <h3>농장 돈사 외부에 설치하여야 하며 측정된 값을 제어관리시스템에 보내야합니다.</h3>
-        <h3>강풍 등에 따른 시설 피해가 예상되면 구조물이 손상되지 않도록 구조물 점검 등 조치수행</h3>
-        <br>
-        <h2>암모니아</h2>
-        <h3>농장 돈사 내부에 설치하여야 하며, 측정된 값을 제어관리시스템에 보내야합니다.</h3>
-        <br>
-        <h2>정전감지</h2>
-        <h3>정전이 발생하면 UPS를 통해 비상밧데리가 작동하고 스마트폰 앱으로 푸시 알람을 전송시켜줍니다.</h3>
-        <h3>농장주가 농장을 떠나 외부에 있어도 현장상태를 즉각 인지하여 빠르게 대응하도록하여 정전으로 인한 온도이상등으로 집단 폐사하는 등의 사고를 사전에 예방합니다.</h3>
-        <br>
-        <h2>누전감지</h2>
-        <h3>전기누전 및 스파크 위험으로부터 푸시 알람을 전송해줍니다.</h3>
-        <h3>농장 돈사 내부에 설치하여야 하며, 측정된 값을 제어관리 시스템에 보내야합니다.</h3>
-    </div>
+    <!-- Navigation -->
+    <nav class="nav">
+        <!-- 콘텐츠 페이지로 이동 -->
+        <div class="container" style="margin-top: 30px;">
+            <div class="container">
+                <ul class="nav-h">
+                    <li> <!-- 서브 메인페이지로 이동 -->
+                        <a href="sub_main.html" class="btn btn-success btn-primary btn-lg" role="button">메인</a>
+                    </li>
+                    <li> <!-- 시스템 콘텐츠로 이동 -->
+                        <a href="sub_con_system.html" class="btn btn-info btn-primary btn-lg" role="button">시스템</a>
+                    </li>
+                        
+                    <li> <!-- 관련기업 콘텐츠로 이동 -->
+                        <a href="sub_con_company.html" class="btn btn-info btn-primary btn-lg" role="button">관련기업</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-<br>
+    <!-- Section -->
+    <section>
+        <!-- 섹션 상자 생성 -->
+        <div class="section card border-success w-75 mx-auto">
+            
+            <!-- 시스템 기술 이미지와 설명 -->
+            <div class="section_b container">
+                <h2>환경정보 수집장치</h2>
+                <h3>개념</h3>
+                <p> 센서와 통신모듈이 결합된 구조로서 측정된 값을 온실통합제어기에 전달 </p>
 
-    <div>
-        <h1>-제어관리시스템-</h1>
-        <br>
-        <h2>개념</h2>
-        <h3>구동기와 통신모듈이 결합된 구조로서 제어관리시스템은 중계기와 게이트웨이를 통해 전달받은 메시지에 근거하여 개별구동기를 제어합니다.</h3>
-        <br>
-        <h2>구성</h2>
-        <h3>급이장비(임신돈군사급이기, 모돈자동급이기, 사료믹스급이기), 출하돈선별기, 사료빈관리기, 음수 관리기</h3>
-        
-        <br>
-        <h2>임신돈사 급이기</h2>
-        <h3>RFID를 이용한 모돈 개체별 급이량을 관제 제어</h3>
-        <h3>임신돈방내 설치하며, 급이기당 수용두수는 40두 이상을 관리할 수 있어야 합니다.</h3>
-        <h3>제어관리시스템과 통신 장애시 자체 구동</h3>
-        <h3>개체별 급이량 제어 및 급이량 분석 가능</h3>
-        <br>
-        <h2>모돈자동 급이기</h2>
-        <h3>임신돈 스톨, 분만틀에 설치되며, 개체별 급이량 제어 및 누적급이량 패턴 분석 기능도 가능합니다.</h3>
-        <h3>제어관리시스템과 통신장애 시 자체 구동이 가능하여 안전하게 활용이 가능합니다.</h3>
-        <br>
-        <h2>사료믹스 급이기</h2>
-        <h3>자돈, 비육사에 설치되며 돈군별급이량 제어 및 급이량 분석 기능</h3>
-        <h3>제어관리시스템과 통신장애 시 자체 구동</h3>
-        <br>
-        <h2>출하돈 선별기</h2>
-        <h3>비육사에 설치되며, 개체별 체중을 측정하고 출하 기준 체중에 따라 선별 가능합니다.</h3>
-        <h3>제어관리시스템과 통신장애에도 구애받지 않고 개별적으로 구동이 가능합니다.</h3>
-        <h3>선별기자체 기능: 개체별 체중 측정, 출하두수, 출하 기준체중 설정 돈방 내 평균 체중 관리</h3>
-        <br>
-        <h2>사료빈 관리기</h2>
-        <h3>사료빈 4개 다리에 전자저울 부착</h3>
-        <h4>-전자저울을 통한 사료빈의 무게 측정으로 사료재고량, 투입량 관리 및 자동주문관리 가능</h4>
-        <h3>제어관리시스템과 통신장애 자체 구동됩니다.</h3>
-        <h3>관리기 자체 기능: 사료빈의 입고량, 일일 이송량 관리</h3>
-        <br>
-        <h2>음수관리기</h2>
-        <h3>돈방에 들어오는 음수관에 설치</h3>
-        <h3>돈방내 음수 투입량 측정</h3>
-        <h3>제어관리시스템과 통신장애시 개별적으로 구동 가능</h3>      
-    </div>
+                <br>
 
-<br>
-    
-    <div>
-        <h1>-정보관리장비-</h1>
-        <br>
-        <h2>개념</h2>
-        <h3>정보관리장비는 참여경영체의 보안 및 사육환경 모니터링을 위한 영상관리 (CCTV, 웹카메라, 녹화장비)와 생산경영관리에 필요한 전산장비(모니터, PC등)로 구성됩니다.</h3>
-        <br>
-        <h2>구성</h2>
-        <h3>고정형카메라(CCTV), 회전/줌형 카메라, 녹화장비, 네트워크</h3>
+                <h3>구성</h3>
+                <p>외부환경 센서장 : 온도센서, 습도센서, 풍향·풍속 센서, 감우(강우감지)센서, 일사량 센서</p>
+                <p>내부환경 센서장 : 온도센서, 습도센서, CO2센서</p>
+            </div>
 
-        <br>
-        <h2>CCTV</h2>
-        <h3>가축의 사양 상태를 확인할 수 있는 축사 내부용 관찰카메라와 시설물 관리를 위한 축사 외부용 보안카메라로 이용합니다.</h3>
-        <h3>관찰카메라는 가축의 근접촬영 및 축사 내부 환경을 확인하며 작물의 관찰 데이터는 일일 주기별로 축사사양관리시스템에 저장하게 합니다.</h3>
-        <h3>보안카메라는 야간촬영 및 식별이 가능하여야 하고 동작감지 장치를 지원 및 향후 데이터 확인을 위한 저장 기능도 포함합니다.</h3>
-        <br>
-        <h2>웹카메라</h2>
-        <h3>CCTV영상을 실시간으로 저장하고 저장 데이터를 검색 및 백업할 수 있는 저장매체를 구성하여야 합니다.</h3>
-        <br>
-        <h2>녹화장비-네트워크</h2>
-        <h3>녹화장비(스토리지)는 타 기종 간 호환성이 있는 제품으로 선정합니다.</h3>
-        <h3>실시간으로 모니터링 및 저장데이터를 확인 가능하도록 기능을 제공합니다.</h3>
-        <h3>스토리지는 실시간 저장 및 검색, 백업을 지원하여야 하며 최소 30일 이상의 영상을 저장하도록 합니다.</h3>
-        <h3>네트워크는 실시간 고화질 영상이 가능한 속도를 확보하여야 합니다.</h3>
-        <br>
-        <h2>PC-모니터</h2>
-        <h3>축사 내 각종 센서를 통해 수집된 환경 데이터를 백업하고 필요한 S/W를 설치하여 축사운영관리시스템용의 전산장비를 구축</h3>
-        <h3>연결된 주변장치와 실시간으로 데이터 통신을 하여야 하므로 대용량 데이터 처리능력을 갖추어야 합니다.</h3>
-    </div>
+            <hr>
 
-<br>
+            <div class="section_b container">
+                <h2>온/습도 센서</h2>
+                <p> 습도 센서는 공기 속의 수증기 양을 재는 센서 </p>
+                <p> 농장 돈사 내-외부에 설치하여야 하며 측정된 값을 제어 관리시스템에 보내야 합니다. </p>             
+            </div>
 
-<div>
-    <h1>-기타장비-</h1>
-    <br>
-        <h2>모돈발정_체크기</h2>
-        <h3>RFID를 이용한 모돈 개체별 발정 체크 관리</h3>
-        <h3>임신돈방내에 설치되며, 수컷돼지와 모돈의 중간에 설치</h3>
-        <h3>모돈 개체별 접근 횟수 측정하여 발정 체크</h3>
-        <h3>제어관리시스템과 통신 장애 시 개별적으로 구동이 가능하도록 설정합니다.</h3>
-</div>
-   
- <!--이미지(크기가 맞지 않으므로 어떻게 넣을지에 따라 수정)-->
-<!--
-    <img src="온-습도_센서.jpg" width="200" height="200" align="left"> //align은 정렬할때 쓴다
-    <img src="CO2센서.jpg" width="200" height="200">
-    <img src="풍향-풍속센서.jpg" width="200" height="200">
-    <img src="암모니아.jpg" width="200" height="200">
-    <img src="정전감지.jpg" width="200" height="200">
-    <img src="누전감지.jpg" width="200" height="200">
-    <img src="임신돈사_급이기.jpg" width="200" height="200">
-    <img src="모돈자동_급이기.jpg" width="200" height="200">
-    <img src="출하돈_선별기.jpg" width="200" height="200">
-    <img src="사료빈_관리기.jpg" width="200" height="200">
-    <img src="음수관리기.jpg" width="200" height="200">
-    <img src="CCTV.jpg" width="200" height="200">
-    <img src="웹카메라.jpg" width="200" height="200">
-    <img src="녹화장비-네트워크.jpg" width="200" height="200">
-    <img src="PC-모니터.jpg" width="200" height="200">
-    <img src="모돈발정_체크기.jpg" width="200" height="200">
+            <div class="section_b container">
+                <h2>CO2센서</h2>
+                <p> 이산화탄소의 측정을 위한 센서 </p>
+                <p> 농장 돈사 내부에 설치하며, 측정된 값을 제어관리시스템에 전송합니다. </p>             
+            </div>
 
--->
+            <div class="section_b container">
+                <h2>풍향-풍속센서</h2>
+                <p> 농장 돈사 외부에 설치하여야 하며 측정된 값을 제어관리시스템에 보내야합니다. </p>
+                <p> 강풍 등에 따른 시설 피해가 예상되면 구조물이 손상되지 않도록 구조물 점검 등 조치수행 </p>             
+            </div>
 
-    
+            <div class="section_b container">
+                <h2>암모니아</h2>
+                <p> 습도 센서는 공기 속의 수증기 양을 재는 센서 </p>
+                <p> 농장 돈사 내부에 설치하여야 하며, 측정된 값을 제어관리시스템에 보내야합니다. </p>             
+            </div>
+
+            <div class="section_b container">
+                <h2>정전감지</h2>
+                <p> 정전이 발생하면 UPS를 통해 비상밧데리가 작동하고 스마트폰 앱으로 푸시 알람을 전송시켜줍니다. </p>
+                <p> 농장주가 농장을 떠나 외부에 있어도 현장상태를 즉각 인지하여 빠르게 대응하도록하여 정전으로 인한 온도이상등으로 집단 폐사하는 등의 사고를 사전에 예방합니다. </p>             
+            </div>
+
+            <div class="section_b container">
+                <h2>누전감지</h2>
+                <p> 전기누전 및 스파크 위험으로부터 푸시 알람을 전송해줍니다. </p>
+                <p> 농장 돈사 내부에 설치하여야 하며, 측정된 값을 제어관리 시스템에 보내야합니다. </p>             
+            </div>
+
+            <div class="card border-info"></div>
+
+            <div class="section_b container">
+                <h2>제어관리시스템</h2>
+                <h3>개념</h3>
+                <p> 구동기와 통신모듈이 결합된 구조로서 제어관리시스템은 중계기와 게이트웨이를 통해 전달받은 메시지에 근거하여 개별구동기를 제어합니다. </p>
+
+                <br>
+
+                <h3>구성</h3>
+                <p>급이장비(임신돈군사급이기, 모돈자동급이기, 사료믹스급이기), 출하돈선별기, 사료빈관리기, 음수 관리기</p>
+            </div>
+
+            <hr>
+
+            <div class="section_b container">
+                <h2>임신돈사 급이기</h2>
+                <p> RFID를 이용한 모돈 개체별 급이량을 관제 제어 </p>
+                <p> 임신돈방내 설치하며, 급이기당 수용두수는 40두 이상을 관리할 수 있어야 합니다. </p>  
+                <p> 제어관리시스템과 통신 장애시 자체 구동 </p>
+                <p> 개체별 급이량 제어 및 급이량 분석 가능 </p>           
+            </div>
+
+            <div class="section_b container">
+                <h2>모돈자동 급이기</h2>
+                <p> 임신돈 스톨, 분만틀에 설치되며, 개체별 급이량 제어 및 누적급이량 패턴 분석 기능도 가능합니다. </p>
+                <p> 제어관리시스템과 통신장애 시 자체 구동이 가능하여 안전하게 활용이 가능합니다. </p>         
+            </div>
+
+            <div class="section_b container">
+                <h2>사료믹스 급이기</h2>
+                <p> 자돈, 비육사에 설치되며 돈군별급이량 제어 및 급이량 분석 기능 </p>
+                <p> 제어관리시스템과 통신장애 시 자체 구동 </p>         
+            </div>
+
+            <div class="section_b container">
+                <h2>출하돈 선별기</h2>
+                <p> 비육사에 설치되며, 개체별 체중을 측정하고 출하 기준 체중에 따라 선별 가능합니다. </p>
+                <p> 제어관리시스템과 통신장애에도 구애받지 않고 개별적으로 구동이 가능합니다. </p>
+                <p> 선별기자체 기능: 개체별 체중 측정, 출하두수, 출하 기준체중 설정 돈방 내 평균 체중 관리 </p>
+            </div>
+
+            <div class="section_b container">
+                <h2>사료빈 관리기</h2>
+                <p> 사료빈 4개 다리에 전자저울 부착 </p>
+                <p> 전자저울을 통한 사료빈의 무게 측정으로 사료재고량, 투입량 관리 및 자동주문관리 가능 </p>
+                <p> 제어관리시스템과 통신장애 자체 구동됩니다. </p>
+                <p> 관리기 자체 기능: 사료빈의 입고량, 일일 이송량 관리 </p>
+            </div>
+
+            <div class="section_b container">
+                <h2>음수관리기</h2>
+                <p> 돈방에 들어오는 음수관에 설치 </p>
+                <p> 돈방내 음수 투입량 측정 </p>
+                <p> 제어관리시스템과 통신장애시 개별적으로 구동 가능 </p>
+            </div>
+
+            <div class="card border-info"></div>
+
+            <div class="section_b container">
+                <h2>정보관리장비</h2>
+                <h3>개념</h3>
+                <p> 정보관리장비는 참여경영체의 보안 및 사육환경 모니터링을 위한 영상관리 (CCTV, 웹카메라, 녹화장비)와 생산경영관리에 필요한 전산장비(모니터, PC등)로 구성됩니다. </p>
+
+                <br>
+
+                <h3>구성</h3>
+                <p> 고정형카메라(CCTV), 회전/줌형 카메라, 녹화장비, 네트워크 </p>
+            </div>
+
+            <hr>
+
+            <div class="section_b container">
+                <h2>CCTV</h2>
+                <p> 가축의 사양 상태를 확인할 수 있는 축사 내부용 관찰카메라와 시설물 관리를 위한 축사 외부용 보안카메라로 이용합니다. </p>
+                <p> 관찰카메라는 가축의 근접촬영 및 축사 내부 환경을 확인하며 작물의 관찰 데이터는 일일 주기별로 축사사양관리시스템에 저장하게 합니다. </p>  
+                <p> 보안카메라는 야간촬영 및 식별이 가능하여야 하고 동작감지 장치를 지원 및 향후 데이터 확인을 위한 저장 기능도 포함합니다. </p>      
+            </div>
+
+            <div class="section_b container">
+                <h2>웹카메라</h2>
+                <p> CCTV영상을 실시간으로 저장하고 저장 데이터를 검색 및 백업할 수 있는 저장매체를 구성하여야 합니다. </p>      
+            </div>
+
+            <div class="section_b container">
+                <h2>녹화장비-네트워크</h2>
+                <p> 녹화장비(스토리지)는 타 기종 간 호환성이 있는 제품으로 선정합니다. </p>
+                <p> 실시간으로 모니터링 및 저장데이터를 확인 가능하도록 기능을 제공합니다. </p>
+                <p> 스토리지는 실시간 저장 및 검색, 백업을 지원하여야 하며 최소 30일 이상의 영상을 저장하도록 합니다. </p>
+                <p> 네트워크는 실시간 고화질 영상이 가능한 속도를 확보하여야 합니다. </p>
+            </div>
+            
+            <div class="section_b container">
+                <h2>PC-모니터</h2>
+                <p> 축사 내 각종 센서를 통해 수집된 환경 데이터를 백업하고 필요한 S/W를 설치하여 축사운영관리시스템용의 전산장비를 구축 </p>
+                <p> 연결된 주변장치와 실시간으로 데이터 통신을 하여야 하므로 대용량 데이터 처리능력을 갖추어야 합니다. </p>
+            </div>
+
+            <div class="card border-info"></div>
+
+            <div class="section_b container">
+                <h2>기타장비</h2>
+                <p> 모돈발정_체크기 </p>
+                <p> RFID를 이용한 모돈 개체별 발정 체크 관리 </p>
+                <p> 임신돈방내에 설치되며, 수컷돼지와 모돈의 중간에 설치 </p>
+                <p> 모돈 개체별 접근 횟수 측정하여 발정 체크 </p>
+                <p> 제어관리시스템과 통신 장애 시 개별적으로 구동이 가능하도록 설정합니다. </p>
+        </div>
+    </section>    
+
+    <!-- Footer -->
+    <footer class="footer small text-center">
+        <div class="container" style="color: black;">
+            <!-- 저작권 표시 -->
+            Copylight &copy; Team. SmartFarmer 2019
+        </div>
+    </footer>
 </body>
 </html>
 

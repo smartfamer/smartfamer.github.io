@@ -53,7 +53,7 @@ body
     color: black;
     font-size: 70px;
     letter-spacing: 0.8rem;
-    background: -webkit-linear-gradient(rgb(235, 91, 91), rgb(190, 71, 214) 90%);
+    background: -webkit-linear-gradient(rgb(199, 202, 33), rgb(36, 226, 62) 90%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-transform: uppercase!important;
@@ -124,8 +124,8 @@ body
 .section_b p
 {
     font-weight: 600;
-    width: 50%;
-    margin: 0 auto;
+    width: 65%;
+    margin: 0 auto 10px auto;
 }
 
 /* 제작자 저작권 표시 */

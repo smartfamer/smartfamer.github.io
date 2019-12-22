@@ -1,78 +1,106 @@
-<!--
-    서브 페이지 (Sub Main Page)
-    "농업 파트"
-    페이지 담당자 : 범주
--->
 
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+    <!-- 모든 페이지의 기본 인코딩은 UTF-8로 합니다. -->
+    <!-- 3개의 메타 태그는 부트스트랩을 위해 필요합니다-->
     <meta charset="UTF-8">
-    <title>Smart Farm</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 웹 페이지의 저자에 대한 정보를 가진 메타-->
+    <meta name="author" content="1961008">
+
+    <title>Smart Famer</title>
+
+    <!-- 웹페이지 상단 아이콘 추가소스 -->
+    <link rel="icon" href="https://www.dropbox.com/s/pxx5jabtuq5qb1x/plant.png?dl=1">
+
+    <!-- 웹페이지 기본폰트 설정(나눔폰트)-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap">
+    <!-- 타이틀 폰트(나눔스퀘어라운드)-->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css" type="text/css">
+     
+    <!-- 부트스트랩 최신 CSS 적용 -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!-- 커스텀CSS 적용 -->
+    <link rel="stylesheet" href="sub_title.css">
 </head>
+
 <body>
-    <!-- 타이틀과 각 분야에 관한 정의와 설명 -->
-    <div id="header">
-        
-        <!--사업관련-->
-        <h1>현재 우리 나라의 스마트 농업에 관한 사업</h1>
-        <p>농식품부는 혁신성장 핵심 선도과제 중 하나로 ‘스마트팜 확산 방안’을 발표했다.
-            여기에는 스마트팜 확산·고도화를 위한 주요 정책과제로 청년 창업생태계 조성, 산업 인프라 구축, ‘스마트팜 혁신밸리’ 등을 제시했다. 
-            농식품부는 2022년까지 스마트팜 혁신밸리를 4개소 조성하고 있다. 
-            혁신밸리를 통해 올해 창업보육생 100명을 선발하는 등 2022년까지 스마트전문인력 500명을 양성하고 기업과 연구기관이 실증 협의체를 구성, 기능성 아열대작물 시험재배, 핵심 기자재의 국산화, 수출형 플랜트 개발 등을 추진할 계획이다. 
-            이외에도 스마트팜에서 생산되는 생육․재배 정보 등 빅데이터를 공유 거래할 수 있는 개방형 플랫폼을 구축(2019~2021년)한다는 계획이다. 
-            이밖에도 첨단기술로 공동방역․분뇨처리가 가능한 스마트축산 시범단지를 3개소 조성하고 데이터 기반으로 농작업을 자동화한 밭농업형 모델을 올해 19개소로 확대할 계획이고 
-            올해부터 블록체인을 활용한 축산물이력관리 시범사업을 추진하는 한편, 농지·재배품목 등 영농정보를 GIS기반으로 통합 활용하는 시스템을 시범 구축할 예정이다. 
-            그렇지만 정부의 스마트농업 추진 정책은 주로 스마트팜 정책에 방점을 두고 있다</p>
-            <h2>기업 정보</h2>
-        <p>대동공업(http://www.daedong.co.kr)
-            -대동뉴스, 연구개발, 제품소개, A/S 영업망, 농기계 상식 <br>
-            성진화학(http://www.chollian.net/~bleutess)
-            -농업용 비닐하우스 필름에 첨가하는각종 첨가제 전문제조회사<br>
-            서울우유(http://www.seoulmilk.co.kr)
-            -조합소개, 제품안내, 우유이야기유용한 사이트 정보<br>
-            신안정밀(http://cecc.gsnu.ac.kr/~shinan)
-            -농업관련 활동사항,  산학협동연구 결과 논문 발표 실적<br>
-            신흥기업사(http://203.232.86.199)
-            -농수산물 건조기, 순환식 곡물건조기, 농업용난방기, 현미기/정미기 그리고 미곡종합처리장을 생산,시공하고 있는 회사로 관련 상품 소개<br>
-            일신화학(http://yunam.ked.co.kr/koreamart/chemistry/ihlshin/ihlshin.html)
-            -농업용특수필름, 멀칭필름,농업자재 상품소개, 회사연혁, 계열사 현황<br>
-            (주)퓨리나코리아(http://www.purina.co.kr)
-            -퓨리나 소개 및 연혁, 사료사업부, PET사업부 축산물사업부<br>
-            (주)흥농종묘(http://mart.ked.co.kr/koreamart/life/hnseed/hungnong.html)
-            -종묘상품소개, 회사연혁, 조직도 등<br>
-            한국홍진(http://www.chollian.net/~sw1119/index.htm)
-            -온실 시공의 스크린, 관수, 양액, 환기선에 대한 정보<br>
-            한농기획(http://vision.nara.co.kr/public/mall/ktfood)
-            -한국의 전통식품과 우수농산물 소개<br>
-            (주)한가람아그리테크(http://203.248.174.2/hangaram/index.html)
-            -관수시설자재와 양액관리기자재 소개<br>
-            동원산업(http://www.dws.co.kr/dongwon)
-            -생산제품, 요리정보, 참치정보, 식품연구소, 동원 인터넷쇼핑<br>
-            선진사료(http://www.sj.co.kr)
-            -제품소개, 양돈,낙농,비육우, 산란계 등에 관한 정보도서관 등<br>
-            이건산업(http://www.eagon.co.kr)
-            -합판 제조, 목재 가공 및 재생, 해외 산림 자원 개발 업체로 계열사인 이건창호시스템, 이건산림제품, 이건자원개발, 이건태평양조림, 리우타로임업, 연변이건목제품유한공사 등 소개<br>
-            신동방사료(http://www.mein.co.kr/coms/shindb/saryo/f.html)
-            -해표식용유로 널리 알려진 신동방(주)의 사료관련사이트로 양계, 양돈,축우, 개, 메추리, 오리, 사슴 등의 사료 정보<br>
-            미원 축산과학연구소(http://www.mw.co.kr/mw2_2.htm)
-            -사료 제조와 판매,종합적 축산 서비스에 대한 소개<br>
-            팜랜드(http://farmland.asung.co.kr/farmland)
-            -수경, 양액, 아성수경, 농업, 원예, 실내장식, 시설농업, 농장<br>
-            한가람포닉스(http://user.chollian.net/~hpponics)
-            -양액재배 등의 농업관련 정보를 제공<br>
-            초전농산(http://www.chollian.net/~micky5/)
-            -초전농산 소개, 묘목, 약초 소개 및 분양안내<br>
-            출처:(http://www.feedtech.co.kr/ko-6.htm)</p>
+    <!-- Header -->
+    <!-- 타이틀 제목과 부제목 생성 -->
+    <header class="header">
+        <div class="container">
+            <h1>Smart Farm</h1>
+            <h2>harvest</h2>
+        </div>
+    </header>
 
+    <!-- Navigation -->
+    <nav class="nav">
+        <!-- 콘텐츠 페이지로 이동 -->
+        <div class="container" style="margin-top: 30px;">
+            <div class="container">
+                <ul class="nav-h">
+                    <li> <!-- 서브 메인페이지로 이동 -->
+                        <a href="sub_main.html" class="btn btn-success btn-primary btn-lg" role="button">메인</a>
+                    </li>
 
-    </div>
+                    <li> <!-- 시스템 콘텐츠로 이동 -->
+                        <a href="harvest_system.html" class="btn btn-info btn-primary btn-lg" role="button">시스템</a>
+                    </li>
 
-    <!-- 영상 삽입 구간 / 또는 사진-->
-    <div id="section">
+                    <li> <!-- 미래전망 콘텐츠로 이동 -->
+                        <a href="harvest_future.html" class="btn btn-info btn-primary btn-lg" role="button">미래 전망</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    </div>
+    <!-- Section -->
+    <section>
+        <!-- 섹션 상자 생성 -->
+        <div class="section card border-success w-75 mx-auto">
+            
+            <!--사업관련-->
+            <div class="section_b container">
+                <h2>현재 우리 나라의 스마트 농업에 관한 사업</h2>
+                <p> 농식품부는 혁신성장 핵심 선도과제 중 하나로 ‘스마트팜 확산 방안’을 발표했다. </p>
+                <p>
+                    여기에는 스마트팜 확산·고도화를 위한 주요 정책과제로 청년 창업생태계 조성, 산업 인프라 구축, ‘스마트팜 혁신밸리’ 등을 제시했다. 
+                    농식품부는 2022년까지 스마트팜 혁신밸리를 4개소 조성하고 있다.
+                </p>
+                <p>
+                    혁신밸리를 통해 올해 창업보육생 100명을 선발하는 등 2022년까지 스마트전문인력 500명을 양성하고 기업과 연구기관이 실증 협의체를 구성, 기능성 아열대작물 시험재배, 핵심 기자재의 국산화, 수출형 플랜트 개발 등을 추진할 계획이다. 
+                    이외에도 스마트팜에서 생산되는 생육․재배 정보 등 빅데이터를 공유 거래할 수 있는 개방형 플랫폼을 구축(2019~2021년)한다는 계획이다.
+                </p>
 
-    
+                <p>
+                    이밖에도 첨단기술로 공동방역․분뇨처리가 가능한 스마트축산 시범단지를 3개소 조성하고 데이터 기반으로 농작업을 자동화한 밭농업형 모델을 올해 19개소로 확대할 계획이고 
+                    올해부터 블록체인을 활용한 축산물이력관리 시범사업을 추진하는 한편, 농지·재배품목 등 영농정보를 GIS기반으로 통합 활용하는 시스템을 시범 구축할 예정이다. 
+                    그렇지만 정부의 스마트농업 추진 정책은 주로 스마트팜 정책에 방점을 두고 있다.
+                </p>
+                <hr>
+                <h2> 기업 정보 </h2>
+                <p> 대동공업(http://www.daedong.co.kr) -대동뉴스, 연구개발, 제품소개, A/S 영업망, 농기계 상식 </p>
+                <p> 서울우유(http://www.seoulmilk.co.kr) -조합소개, 제품안내, 우유이야기유용한 사이트 정보 </p>
+                <p> 신안정밀(http://cecc.gsnu.ac.kr/~shinan) -농업관련 활동사항,  산학협동연구 결과 논문 발표 실적 </p>
+                <p> (주)퓨리나코리아(http://www.purina.co.kr) -퓨리나 소개 및 연혁, 사료사업부, PET사업부 축산물사업부 </p>
+                <p> 한농기획(http://vision.nara.co.kr/public/mall/ktfood) -한국의 전통식품과 우수농산물 소개 </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer small text-center">
+        <div class="container">
+            <!-- 저작권 표시 -->
+            Copylight &copy; Team. SmartFarmer 2019
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,81 +1,137 @@
-<!--
-    시스템 페이지 (System Page)
-
-    "축산 파트"
-    페이지 담당자 : 영우
--->
 
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+    <!-- 모든 페이지의 기본 인코딩은 UTF-8로 합니다. -->
+    <!-- 3개의 메타 태그는 부트스트랩을 위해 필요합니다-->
     <meta charset="UTF-8">
-    <title>System</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 웹 페이지의 저자에 대한 정보를 가진 메타-->
+    <meta name="author" content="1961022">
+
+    <title>Smart Famer</title>
+
+    <!-- 웹페이지 상단 아이콘 추가소스 -->
+    <link rel="icon" href="https://www.dropbox.com/s/pxx5jabtuq5qb1x/plant.png?dl=1">
+
+    <!-- 웹페이지 기본폰트 설정(나눔폰트)-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap">
+    <!-- 타이틀 폰트(나눔스퀘어라운드)-->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css" type="text/css">
+     
+    <!-- 부트스트랩 최신 CSS 적용 -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!-- 커스텀CSS 적용 -->
+    <link rel="stylesheet" href="sub_title.css">
 </head>
+
 <body>
-    <!-- 스마트 축산 구성과 설명 -->
-    <div id="header">
+    <!-- Header -->
+    <!-- 타이틀 제목과 부제목 생성 -->
+    <header class="header">
+        <div class="container">
+            <h1>Smart Farm</h1>
+            <h2>LiveStock</h2>
+        </div>
+    </header>
 
-        <!--예제를 테이블을 사용하여 만들어보았다-->
-        <h1>스마트 축산 시스템에 쓰이는 기기</h1>
-        <table border="1">
-            <tr>
-                <td colspan="2">구성요소</td>
-                <td>세부 내역</td>
-            </tr>
-            <tr>
-                <td rowspan="2">돈사환경관리</td>
-                <td>내부환경 관리장비</td>
-                <td>온도,습도,CO2,조도,암모니아,이산화탄소,누전(정전)감지 등</td>
-            </tr>
-            <tr>
-                <td>외부환경 관리장비</td>
-                <td>온도,습도,풍향,강우,일사,풍속 등</td>
-            </tr>
-            <tr>
-                <td rowspan="4">제어 장비</td>
-                <td>임신사</td>
-                <td>발정체크기,모돈급이기,사료빈,음수관리기 등</td>
-            </tr>
-            <tr>
-                <td>분만사</td>
-                <td>보온등,모돈급이기,사료빈,음수관리기 등</td>
-            </tr>
-            <tr>
-                <td>자돈사</td>
-                <td>보온등,사료믹스기,사료빈,음수관리기 등</td>
-            </tr>
-            <tr>
-                <td>비육사</td>
-                <td>돈선별기,사료믹스기,사료빈,음수관리기 등</td>
-            </tr>
-            <tr>
-                <td colspan="2">영상장비</td>
-                <td>CCTV(웹카메라),DVR 등</td>
-            </tr>
-            <tr>
-                <td colspan="2">생산경영 관리시스템</td>
-                <td>PC,모니터 등</td>
-            </tr>
-        </table>
-    </div>
+    <!-- Navigation -->
+    <nav class="nav">
+        <!-- 콘텐츠 페이지로 이동 -->
+        <div class="container" style="margin-top: 30px;">
+            <div class="container">
+                <ul class="nav-h">
+                    <li> <!-- 서브 메인페이지로 이동 -->
+                        <a href="sub_main.html" class="btn btn-success btn-primary btn-lg" role="button">메인</a>
+                    </li>
+                    <li> <!-- 기술 콘텐츠로 이동 -->
+                        <a href="sub_con_utility.html" class="btn btn-info btn-primary btn-lg" role="button">기술</a>
+                    </li>
+                        
+                    <li> <!-- 관련기업 콘텐츠로 이동 -->
+                        <a href="sub_con_company.html" class="btn btn-info btn-primary btn-lg" role="button">관련기업</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <div>
-        <h1>예제</h1>
-        <img src="Contents_Systme_예제.jpg" width="800" height="500">
-    </div>
-<br>
-<br>
-<br>
+    <!-- Section -->
+    <section>
+        <!-- 섹션 상자 생성 -->
+        <div class="section card border-success w-75 mx-auto">
+            
+            <!-- 스마트 축산 구성과 설명 -->
+            <div class="section_b container">
+                <h2>스마트 축산 시스템에 쓰이는 기기</h2>
+                <p>
+                    <table border="1" class="container">
+                        <tr>
+                            <td colspan="2">구성요소</td>
+                            <td>세부 내역</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">돈사환경관리</td>
+                            <td>내부환경 관리장비</td>
+                            <td>온도,습도,CO2,조도,암모니아,이산화탄소,누전(정전)감지 등</td>
+                        </tr>
+                        <tr>
+                            <td>외부환경 관리장비</td>
+                            <td>온도,습도,풍향,강우,일사,풍속 등</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4">제어 장비</td>
+                            <td>임신사</td>
+                            <td>발정체크기,모돈급이기,사료빈,음수관리기 등</td>
+                        </tr>
+                        <tr>
+                            <td>분만사</td>
+                            <td>보온등,모돈급이기,사료빈,음수관리기 등</td>
+                        </tr>
+                        <tr>
+                            <td>자돈사</td>
+                            <td>보온등,사료믹스기,사료빈,음수관리기 등</td>
+                        </tr>
+                        <tr>
+                            <td>비육사</td>
+                            <td>돈선별기,사료믹스기,사료빈,음수관리기 등</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">영상장비</td>
+                            <td>CCTV(웹카메라),DVR 등</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">생산경영 관리시스템</td>
+                            <td>PC,모니터 등</td>
+                        </tr>
+                    </table>
+                </p>
+                <h2>예제</h2>
+                <img src="img/Contents_System_예제.jpg" width="800" height="500">
+            </div>
 
-    <!-- 영상 삽입 구간 / 또는 사진-->
-    <div id="section">
+            <hr>
 
-        <!--스마트 축산 개념도 사진 삽입 *주의:경로 잘 파악 할 것-->
-        <h1>스마트 축산 개념도</h1>
-        <img src="Contents_Systme_스마트축산개념도.jpg" width="800" height="500">
-    </div>
+            <div class="section_b container">
+                <!--스마트 축산 개념도 사진 삽입 *주의:경로 잘 파악 할 것-->
+                <h2>스마트 축산 개념도</h2>
+                <img src="img/Contents_System_스마트축산개념도.jpg" width="800" height="500">
+            </div>
 
-    
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer small text-center">
+        <div class="container">
+            <!-- 저작권 표시 -->
+            Copylight &copy; Team. SmartFarmer 2019
+        </div>
+    </footer>
 </body>
 </html>
 
